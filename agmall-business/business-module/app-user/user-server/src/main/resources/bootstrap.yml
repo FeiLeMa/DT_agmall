@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+  cloud:
+    config:
+      profile: dev
+      name: app-public,app-user
+      uri: http://127.0.0.1:8888
+      fail-fast: true
+      username: admin
+      password: admin
+mybatis:
+  mapper-locations: classpath:mybatis.mappers/*.xml
+

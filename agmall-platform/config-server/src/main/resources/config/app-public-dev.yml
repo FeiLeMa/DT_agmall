@@ -1,0 +1,11 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+    instanceId: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+    leaseRenewalIntervalInSeconds: 30
+  client:
+    registryFetchIntervalSeconds: 30
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://47.240.11.229:8761/eureka
+

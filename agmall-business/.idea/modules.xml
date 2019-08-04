@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/agmall-business.iml" filepath="$PROJECT_DIR$/agmall-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-module/app-user/app-user.iml" filepath="$PROJECT_DIR$/business-module/app-user/app-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-core/business-core.iml" filepath="$PROJECT_DIR$/business-core/business-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-module/business-module.iml" filepath="$PROJECT_DIR$/business-module/business-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-module/app-user/user-api/user-api.iml" filepath="$PROJECT_DIR$/business-module/app-user/user-api/user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-module/app-user/user-feign/user-feign.iml" filepath="$PROJECT_DIR$/business-module/app-user/user-feign/user-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-module/app-user/user-server/user-server.iml" filepath="$PROJECT_DIR$/business-module/app-user/user-server/user-server.iml" />
+    </modules>
+  </component>
+</project>
