@@ -4,11 +4,20 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DT_agmall.iml" filepath="$PROJECT_DIR$/.idea/DT_agmall.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/agmall-business.iml" filepath="$PROJECT_DIR$/agmall-business/agmall-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/app-category.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/app-category.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/app-user.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/app-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-core/business-core.iml" filepath="$PROJECT_DIR$/agmall-business/business-core/business-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/business-module.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/business-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-api/category-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/category-api/category-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/category-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/category-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/category-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/category-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-platform/config-server/config-server.iml" filepath="$PROJECT_DIR$/agmall-platform/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-platform/mybatis-generate/mybatis-generate.iml" filepath="$PROJECT_DIR$/agmall-platform/mybatis-generate/mybatis-generate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-api/product-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-api/product-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/product-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/product-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/product-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/product-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-api/user-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/user-api/user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/user-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/user-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-feignclient/user-feignclient.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feignclient/user-feignclient.iml" />

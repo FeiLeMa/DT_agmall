@@ -11,7 +11,7 @@
 
     <artifactId>user-feign</artifactId>
 
-    `
+
     <dependencies>
         <dependency>
             <groupId>com.alag.agmall.business</groupId>

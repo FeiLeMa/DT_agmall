@@ -13,6 +13,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>app-user</module>
+        <module>app-product</module>
+        <module>all-api</module>
+        <module>app-category</module>
     </modules>
 
     <dependencies>
@@ -20,6 +23,12 @@
             <groupId>com.alag.agmall.business</groupId>
             <artifactId>business-core</artifactId>
             <version>1.0.0</version>
+        </dependency>
+        <!--        pageHelper-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.5</version>
         </dependency>
     </dependencies>
 

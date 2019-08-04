@@ -7,7 +7,6 @@ spring:
     port: 6379
     password: 123456
     timeout: 2000ms
-  session:
     store-type: redis
   application:
     name: app-user
