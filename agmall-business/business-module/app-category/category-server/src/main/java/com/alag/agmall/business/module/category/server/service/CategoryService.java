@@ -13,4 +13,6 @@ public interface CategoryService {
     ServerResponse<List<Category>> getParallelCategoryByParentId(Integer categoryId);
 
     ServerResponse<List<Integer>> getAllDeepChildId(Integer categoryId);
+
+    ServerResponse<Category> getCategoryById(Integer categoryId);
 }

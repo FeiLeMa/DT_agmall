@@ -10,11 +10,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>product-server</artifactId>
-
     <dependencies>
         <dependency>
             <groupId>com.alag.agmall.business</groupId>
             <artifactId>product-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alag.agmall.business</groupId>
+            <artifactId>user-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alag.agmall.business</groupId>
+            <artifactId>category-feign</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
@@ -45,4 +54,5 @@
             <version>2.0.0</version>
         </dependency>
     </dependencies>
+
 </project>

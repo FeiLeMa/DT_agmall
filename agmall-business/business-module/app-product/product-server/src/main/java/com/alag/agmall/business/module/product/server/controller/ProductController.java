@@ -1,5 +1,6 @@
 package com.alag.agmall.business.module.product.server.controller;
 
+
 import com.alag.agmall.business.core.common.ServerResponse;
 import com.alag.agmall.business.core.vo.ProductDetailVo;
 import com.alag.agmall.business.module.product.server.service.ProductService;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/product")
-public class ProductServerController {
+public class ProductController {
 
     @Autowired
     private ProductService productService;

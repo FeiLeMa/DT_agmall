@@ -2,14 +2,17 @@ package com.alag.agmall.business.module.category.api;
 
 
 import com.alag.agmall.business.core.common.ServerResponse;
+import com.alag.agmall.business.module.category.api.model.Category;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 
-@RestController
 @RequestMapping("/manage/category")
 public interface CategoryManageController {
+
+    @GetMapping("getCategoryById")
+    ServerResponse<Category> getById(@RequestParam("categoryId") Integer categoryId);
 
     @PostMapping("add_category")
     ServerResponse addCategory(@RequestParam(value = "categoryName") String categoryName,

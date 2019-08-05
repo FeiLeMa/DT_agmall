@@ -1,6 +1,5 @@
 package com.alag.agmall.business.module.product.server.service;
 
-
 import com.alag.agmall.business.core.common.ServerResponse;
 import com.alag.agmall.business.core.vo.ProductDetailVo;
 import com.alag.agmall.business.module.product.api.model.Product;

@@ -14,11 +14,11 @@ public interface ProductController {
 
 
     @GetMapping("/detail/{productId}")
-    ServerResponse<ProductDetailVo> getDetail(@PathVariable("productId") Integer productId);
+     ServerResponse<ProductDetailVo> getDetail(@PathVariable Integer productId);
 
     @GetMapping("/list/{keyword}/{categoryId}/{pageNum}/{pageSize}")
-    ServerResponse<PageInfo> list(@PathVariable(value = "keyword") String keyword,
-                                  @PathVariable(value = "categoryId") Integer categoryId,
-                                  @PathVariable(value = "pageNum") Integer pageNum,
-                                  @PathVariable(value = "pageSize") Integer pageSize);
+     ServerResponse<PageInfo> list(@PathVariable(value = "keyword") String keyword,
+                                         @PathVariable(value = "categoryId") Integer categoryId,
+                                         @PathVariable(value = "pageNum") Integer pageNum,
+                                         @PathVariable(value = "pageSize") Integer pageSize);
 }

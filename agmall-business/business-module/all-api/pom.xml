@@ -12,31 +12,10 @@
     <artifactId>all-api</artifactId>
 
     <dependencies>
-<!--        api-->
-        <dependency>
-            <groupId>com.alag.agmall.business</groupId>
-            <artifactId>user-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alag.agmall.business</groupId>
-            <artifactId>product-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alag.agmall.business</groupId>
-            <artifactId>category-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
 <!--        feign-->
         <dependency>
             <groupId>com.alag.agmall.business</groupId>
             <artifactId>user-feign</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alag.agmall.business</groupId>
-            <artifactId>product-feign</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>

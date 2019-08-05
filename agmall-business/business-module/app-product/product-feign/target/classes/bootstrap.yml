@@ -4,7 +4,7 @@ spring:
   cloud:
     config:
       profile: dev
-      name: app-public,app-product-feign
+      name: app-f-public,app-product-feign
       uri: http://127.0.0.1:8888
       fail-fast: true
       username: admin

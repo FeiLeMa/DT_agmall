@@ -1,12 +1,13 @@
 package com.alag.agmall.business.module.product.server.service.impl;
 
-
 import com.alag.agmall.business.core.common.Const;
 import com.alag.agmall.business.core.common.ResponseCode;
 import com.alag.agmall.business.core.common.ServerResponse;
 import com.alag.agmall.business.core.util.PropertiesUtil;
 import com.alag.agmall.business.core.vo.ProductDetailVo;
 import com.alag.agmall.business.core.vo.ProductListVo;
+import com.alag.agmall.business.module.category.api.model.Category;
+import com.alag.agmall.business.module.category.feign.controller.CategoryFeignController;
 import com.alag.agmall.business.module.product.api.model.Product;
 import com.alag.agmall.business.module.product.server.mapper.ProductMapper;
 import com.alag.agmall.business.module.product.server.service.ProductService;
@@ -28,9 +29,8 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductMapper productMapper;
     @Autowired
-    private CategoryMapper categoryMapper;
-    @Autowired
-    private CategoryService categoryService;
+    private CategoryFeignController categoryFeign;
+
 
 
     private ProductListVo assembleProductListVo(Product product) {
@@ -61,7 +61,7 @@ public class ProductServiceImpl implements ProductService {
 
         productDetailVo.setImageHost(PropertiesUtil.getProperty("ftp.server.http.prefix"));
 
-        Category category = categoryMapper.selectByPrimaryKey(product.getCategoryId());
+        Category category = categoryFeign.getById(product.getCategoryId()).getData();
         if (category == null) {
             productDetailVo.setParentCategoryId(0);//默认根节点
         } else {
@@ -186,7 +186,7 @@ public class ProductServiceImpl implements ProductService {
             return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), "参数不可为空");
         }
 
-        Category category = categoryMapper.selectByPrimaryKey(categoryId);
+        Category category = categoryFeign.getById(categoryId).getData();
         log.info("category:",category);
         if (category == null && StringUtils.isBlank(keyword)) {
             PageHelper.startPage(pageNum, pageSize);
@@ -200,7 +200,7 @@ public class ProductServiceImpl implements ProductService {
         }
 
         List<ProductListVo> productListVoList = Lists.newArrayList();
-        List<Integer> categoryIdList = categoryService.getAllDeepChildId(categoryId).getData();
+        List<Integer> categoryIdList = categoryFeign.getDeepChildId(categoryId).getData();
         PageHelper.startPage(pageNum, pageSize);
         List<Product> productList = productMapper.getProductListByKeywordAndcategoryIdList(keyword, categoryIdList.size() == 0 ? null : categoryIdList);
         for (Product product : productList) {

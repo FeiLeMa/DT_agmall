@@ -14,13 +14,12 @@
     <dependencies>
         <dependency>
             <groupId>com.alag.agmall.business</groupId>
-            <artifactId>all-api</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.alag.agmall.business</groupId>
-                    <artifactId>category-feign</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>category-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alag.agmall.business</groupId>
+            <artifactId>user-api</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>

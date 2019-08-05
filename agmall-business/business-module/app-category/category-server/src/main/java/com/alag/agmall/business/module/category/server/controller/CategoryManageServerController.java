@@ -1,6 +1,7 @@
 package com.alag.agmall.business.module.category.server.controller;
 
 import com.alag.agmall.business.core.common.ServerResponse;
+import com.alag.agmall.business.module.category.api.model.Category;
 import com.alag.agmall.business.module.category.server.Interceptor.LoginRequired;
 import com.alag.agmall.business.module.category.server.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,6 @@ import java.util.List;
 public class CategoryManageServerController {
     @Autowired
     private CategoryService categoryService;
-
 
 
     @PostMapping("add_category")
@@ -44,8 +44,13 @@ public class CategoryManageServerController {
     @GetMapping("get_deep_child_id")
     @LoginRequired
     public ServerResponse<List<Integer>> getDeepChildId(HttpSession session,
-                                                        @RequestParam(value = "categoryId") Integer categoryId){
+                                                        @RequestParam(value = "categoryId") Integer categoryId) {
         return categoryService.getAllDeepChildId(categoryId);
+    }
+
+    @GetMapping("getCategoryById")
+    public ServerResponse<Category> getById(@RequestParam("categoryId") Integer categoryId) {
+        return categoryService.getCategoryById(categoryId);
     }
 
 }

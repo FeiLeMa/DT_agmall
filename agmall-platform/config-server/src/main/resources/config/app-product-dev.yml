@@ -1,17 +1,17 @@
 server:
   port: 8092
 spring:
-  redis:
-    database: 0
-    host: 149.129.70.210
-    port: 6379
-    password: 123456
-    timeout: 2000ms
-    store-type: redis
   application:
     name: app-product
   profiles:
     active: dev
+  redis:
+    database: 0
+    host: 47.240.11.229
+    port: 6379
+    password: 123456
+    timeout: 2000ms
+    store-type: redis
   datasource:
     # 使用阿里的Druid连接池
     type: com.alibaba.druid.pool.DruidDataSource

@@ -77,6 +77,12 @@ public class CategoryServiceImp implements CategoryService {
         return ServerResponse.createBySuccess(categoryIds);
     }
 
+    @Override
+    public ServerResponse<Category> getCategoryById(Integer categoryId) {
+
+        return ServerResponse.createBySuccess(categoryMapper.selectByPrimaryKey(categoryId));
+    }
+
     private void getIdByReRcursion(Integer categoryId) {
         List<Category> categoryList = categoryMapper.selectCategoryByParentId(categoryId);
         if (CollectionUtils.isEmpty(categoryList)) {

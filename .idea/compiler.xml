@@ -12,11 +12,11 @@
         <module name="all-api" />
         <module name="mybatis-generate" />
         <module name="product-feign" />
-        <module name="category-api" />
+        <module name="user-feign" />
         <module name="product-api" />
         <module name="user-server" />
+        <module name="category-api" />
         <module name="product-server" />
-        <module name="user-feign" />
         <module name="category-feign" />
         <module name="user-api" />
         <module name="business-core" />
