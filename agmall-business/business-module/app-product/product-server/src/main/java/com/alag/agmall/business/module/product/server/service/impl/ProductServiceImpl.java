@@ -211,4 +211,14 @@ public class ProductServiceImpl implements ProductService {
         pageInfo.setList(productListVoList);
         return ServerResponse.createBySuccess(pageInfo);
     }
+
+    @Override
+    public ServerResponse<Product> getPOJOProductById(Integer id) {
+        Product product = productMapper.selectByPrimaryKey(id);
+        if (product == null) {
+            return ServerResponse.createByErrorMessage("没有找到产品");
+        }
+
+        return ServerResponse.createBySuccess(product);
+    }
 }

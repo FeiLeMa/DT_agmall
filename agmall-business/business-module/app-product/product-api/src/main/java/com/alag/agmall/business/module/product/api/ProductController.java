@@ -21,7 +21,6 @@ public interface ProductController {
                                   @PathVariable(value = "pageNum") Integer pageNum,
                                   @PathVariable(value = "pageSize") Integer pageSize);
 
-
     @PostMapping("add")
     ServerResponse saveProduct(@RequestBody Product product);
 
@@ -38,4 +37,7 @@ public interface ProductController {
                                     @RequestParam(value = "pageSize", defaultValue = "10") int pageSize,
                                     @RequestParam(value = "productName") String productName,
                                     @RequestParam(value = "productId") Integer productId);
+
+    @GetMapping("get_pj_prodcut")
+    ServerResponse<Product> getPJPById(@RequestParam("id") Integer id);
 }

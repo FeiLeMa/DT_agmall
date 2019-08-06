@@ -19,4 +19,6 @@ public interface ProductService {
     ServerResponse<ProductDetailVo> getProductDetail(Integer productId);
 
     ServerResponse<PageInfo> getListByKeyword(String keyword, Integer categoryId, Integer pageNum, Integer pageSize);
+
+    ServerResponse<Product> getPOJOProductById(Integer id);
 }

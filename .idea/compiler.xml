@@ -10,17 +10,20 @@
         <module name="config-server" />
         <module name="productback-server" />
         <module name="user-feignclient" />
+        <module name="cart-server" />
         <module name="shipping-server" />
         <module name="all-api" />
         <module name="productback-feign" />
         <module name="shipping-feign" />
         <module name="mybatis-generate" />
         <module name="product-feign" />
+        <module name="cart-api" />
         <module name="category-api" />
         <module name="product-api" />
         <module name="user-server" />
         <module name="product-server" />
         <module name="user-feign" />
+        <module name="cart-feign" />
         <module name="category-feign" />
         <module name="productback-api" />
         <module name="user-api" />
@@ -31,6 +34,7 @@
     <bytecodeTargetLevel>
       <module name="agmall-business" target="1.8" />
       <module name="all-api" target="1.8" />
+      <module name="app-cart" target="1.8" />
       <module name="app-category" target="1.8" />
       <module name="app-product" target="1.8" />
       <module name="app-productback" target="1.8" />
@@ -39,6 +43,9 @@
       <module name="business-core" target="1.8" />
       <module name="business-module" target="1.8" />
       <module name="businesscore" target="1.5" />
+      <module name="cart-api" target="1.8" />
+      <module name="cart-feign" target="1.8" />
+      <module name="cart-server" target="1.8" />
       <module name="category-api" target="1.8" />
       <module name="category-feign" target="1.8" />
       <module name="category-server" target="1.8" />
@@ -65,6 +72,9 @@
       <module name="all-api" options="-parameters" />
       <module name="app-product" options="-parameters" />
       <module name="business-core" options="-parameters" />
+      <module name="cart-api" options="-parameters" />
+      <module name="cart-feign" options="-parameters" />
+      <module name="cart-server" options="-parameters" />
       <module name="category-api" options="-parameters" />
       <module name="category-feign" options="-parameters" />
       <module name="category-server" options="-parameters" />

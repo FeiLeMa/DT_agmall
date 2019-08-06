@@ -70,4 +70,9 @@ public class ProductController {
                                            @RequestParam(value = "productId") Integer productId) {
         return productService.getProductByIdAndName(pageNum, pageSize, productName, productId);
     }
+
+    @GetMapping("get_pj_prodcut")
+    public ServerResponse<Product> getPJPById(@RequestParam("id") Integer id) {
+        return productService.getPOJOProductById(id);
+    }
 }

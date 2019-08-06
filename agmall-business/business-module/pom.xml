@@ -19,6 +19,7 @@
         <module>app-product</module>
         <module>app-productback</module>
         <module>app-shipping</module>
+        <module>app-cart</module>
     </modules>
 
     <dependencies>

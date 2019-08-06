@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/DT_agmall.iml" filepath="$PROJECT_DIR$/.idea/DT_agmall.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/agmall-business.iml" filepath="$PROJECT_DIR$/agmall-business/agmall-business.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-cart/app-cart.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-cart/app-cart.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/app-category.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/app-category.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/app-productback.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-productback/app-productback.iml" />
@@ -12,6 +13,9 @@
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/app-user.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/app-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-core/business-core.iml" filepath="$PROJECT_DIR$/agmall-business/business-core/business-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/business-module.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/business-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-api/cart-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-api/cart-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-feign/cart-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-feign/cart-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-server/cart-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-server/cart-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-api/category-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/category-api/category-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/category-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/category-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/category-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/category-server.iml" />
