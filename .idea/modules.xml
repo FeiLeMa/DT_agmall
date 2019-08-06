@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/app-category.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/app-category.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/app-productback.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-productback/app-productback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/app-shipping.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/app-shipping.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/app-user.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/app-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-core/business-core.iml" filepath="$PROJECT_DIR$/agmall-business/business-core/business-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/business-module.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/business-module.iml" />
@@ -22,6 +23,9 @@
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-api/productback-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-api/productback-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-feign/productback-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-feign/productback-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/productback-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/productback-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/shipping-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/shipping-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/shipping-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/shipping-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/shipping-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/shipping-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-api/user-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/user-api/user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/user-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/user-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-feignclient/user-feignclient.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feignclient/user-feignclient.iml" />

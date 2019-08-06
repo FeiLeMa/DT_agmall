@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fe24db6-7814-4cfd-be95-615add38df0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-api/src/main/java/com/alag/agmall/business/module/productback/api/ProductManageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-feign/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-feign/src/main/java/com/alag/agmall/business/module/productback/feign/config/FeignHeadConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-feign/src/main/java/com/alag/agmall/business/module/productback/feign/controller/ProductbackFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/ProductbackServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/controller/ProductManageServerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-productback-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-api/src/main/java/com/alag/agmall/business/module/product/api/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-api/src/main/java/com/alag/agmall/business/module/product/api/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-api/target/classes/com/alag/agmall/business/module/product/api/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-api/target/classes/com/alag/agmall/business/module/product/api/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/target/classes/com/alag/agmall/business/module/product/feign/ProductFeignApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/target/classes/com/alag/agmall/business/module/product/server/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/target/classes/com/alag/agmall/business/module/product/server/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/src/main/java/com/alag/agmall/business/module/shipping/api/ShippingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/src/main/java/com/alag/agmall/business/module/shipping/api/model/Shipping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/src/main/java/com/alag/agmall/business/module/shipping/feign/config/FeignHeadConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/src/main/java/com/alag/agmall/business/module/shipping/feign/controller/ShippingFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/ShippingServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/config/DruidConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/controller/ShippingServerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/mapper/ShippingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/service/ShippingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/service/impl/ShippingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/resources/mybatis.mappers/ShippingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-shipping-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agmall-business/business-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/agmall-platform/eureka-server/target/" />
@@ -45,6 +45,10 @@
     <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-api/target/" />
     <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-productback/target/" />
     <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-feign/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-shipping/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,41 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/resources/bootstrap.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/ProductbackServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/controller/ProductManageServerController.java">
+        <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/controller/ShippingServerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-262">
-              <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="48" column="81" selection-start-line="48" selection-start-column="81" selection-end-line="48" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -118,8 +92,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -139,10 +113,12 @@
       <find>getAllDeepChildId</find>
       <find>com.alag.mmall.model.Product</find>
       <find>@LoginRequired</find>
-      <find>public</find>
       <find>@LoginRequired</find>
       <find>productService</find>
       <find>HttpSession session,</find>
+      <find>public</find>
+      <find>HttpSession session,</find>
+      <find>com.alag.mmall.model.Shipping</find>
     </findStrings>
     <replaceStrings>
       <replace>com.alag.agmall.business.module.user.api.User</replace>
@@ -152,6 +128,7 @@
       <replace>com.alag.agmall.business.module.category.api.model.Category</replace>
       <replace>com.alag.agmall.business.module.product.api.model.Product</replace>
       <replace>productFeignClient</replace>
+      <replace>com.alag.agmall.business.module.shipping.api.model.Shipping</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/agmall-business/business-module/app-user/user-server/src/main/java</dir>
@@ -163,24 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-feign-public-dev.yml" />
-        <option value="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-f-public-dev.yml" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feignclient/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/java/com/alag/agmall/business/module/category/server/service/CategoryService.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/java/com/alag/agmall/business/module/category/server/service/impl/CategoryServiceImp.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/all-api/pom.xml" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-user/user-server/pom.xml" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/pom.xml" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-api/src/main/java/com/alag/agmall/business/module/product/api/model/Product.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/pom.xml" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/src/main/java/com/alag/agmall/business/module/category/feign/CategoryFeignApp.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/src/main/java/com/alag/agmall/business/module/product/feign/ProductFeignApp.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-product-feign-dev.yml" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/src/main/java/com/alag/agmall/business/module/product/feign/config/FeignHeadConfiguration.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/src/main/java/com/alag/agmall/business/module/product/feign/controller/CategoryFeignClient.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/src/main/java/com/alag/agmall/business/module/product/feign/controller/ProductFeignClient.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/src/main/java/com/alag/agmall/business/module/product/feign/mapper/ProductMapper.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/mapper/ProductMapper.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/resources/mybatis.mappers/ProductMapper.xml" />
@@ -214,6 +173,24 @@
         <option value="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-productback-dev.yml" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/ProductbackServer.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/src/main/java/com/alag/agmall/business/module/shipping/api/model/Shipping.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/src/main/java/com/alag/agmall/business/module/shipping/api/ShippingController.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/src/main/java/com/alag/agmall/business/module/shipping/feign/config/FeignHeadConfiguration.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/src/main/java/com/alag/agmall/business/module/shipping/feign/controller/ShippingFeignClient.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/ShippingServer.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/config/DruidConfiguration.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/controller/ShippingController.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/service/ShippingService.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/resources/mybatis.mappers/ShippingMapper.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/mapper/ShippingMapper.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/service/impl/ShippingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/controller/ShippingServerController.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-shipping-dev.yml" />
       </list>
     </option>
   </component>
@@ -281,30 +258,23 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-category" type="462c0819:PsiDirectoryNode" />
+              <item name="app-shipping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
+              <item name="app-shipping" type="462c0819:PsiDirectoryNode" />
+              <item name="shipping-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app-shipping" type="462c0819:PsiDirectoryNode" />
+              <item name="shipping-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -312,8 +282,8 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app-shipping" type="462c0819:PsiDirectoryNode" />
+              <item name="shipping-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -322,8 +292,8 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app-shipping" type="462c0819:PsiDirectoryNode" />
+              <item name="shipping-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -333,96 +303,8 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-feign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-feign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-feign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-feign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-shipping" type="462c0819:PsiDirectoryNode" />
+              <item name="shipping-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -433,8 +315,8 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-shipping" type="462c0819:PsiDirectoryNode" />
+              <item name="shipping-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -446,108 +328,11 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-shipping" type="462c0819:PsiDirectoryNode" />
+              <item name="shipping-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-productback" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-productback" type="462c0819:PsiDirectoryNode" />
-              <item name="productback-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-productback" type="462c0819:PsiDirectoryNode" />
-              <item name="productback-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-productback" type="462c0819:PsiDirectoryNode" />
-              <item name="productback-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-productback" type="462c0819:PsiDirectoryNode" />
-              <item name="productback-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-productback" type="462c0819:PsiDirectoryNode" />
-              <item name="productback-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
-              <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-productback" type="462c0819:PsiDirectoryNode" />
-              <item name="productback-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
@@ -621,17 +406,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config" />
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/resources/mybatis.mappers" />
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/src/main/java/com/alag/agmall/business/module/shipping/feign" />
       <recent name="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/resources" />
-      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/resources" />
-      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server" />
-      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/resources/mybatis.mappers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.alag.agmall.business.module.productback.server.controller" />
-      <recent name="com.alag.agmall.business.module.productback.server.config" />
-      <recent name="com.alag.agmall.business.module.productback.server" />
-      <recent name="com.alag.agmall.business.module.productback.feign.controller" />
-      <recent name="com.alag.agmall.business.module.productback.feign.config" />
+      <recent name="com.alag.agmall.business.module.shipping.server.mapper" />
+      <recent name="com.alag.agmall.business.module.shipping.server.service.impl" />
+      <recent name="com.alag.agmall.business.module.shipping.server.service" />
+      <recent name="com.alag.agmall.business.module.shipping.server.controller" />
+      <recent name="com.alag.agmall.business.module.shipping.server.config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/src/main/resources" />
@@ -655,7 +440,7 @@
     </option>
     <option name="contentProportion" value="0.19090909" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductbackServer">
+  <component name="RunManager" selected="Spring Boot.ShippingServer">
     <configuration name="CategoryServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="category-server" />
       <extension name="coverage">
@@ -702,15 +487,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserFeignApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="user-feignclient" />
+    <configuration name="ShippingServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="shipping-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.alag.agmall.business.module.user.feign.*" />
+          <option name="PATTERN" value="com.alag.agmall.business.module.shipping.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alag.agmall.business.module.user.feign.UserFeignApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alag.agmall.business.module.shipping.server.ShippingServer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -730,11 +515,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.UserServer" />
+        <item itemvalue="Spring Boot.ShippingServer" />
         <item itemvalue="Spring Boot.ProductbackServer" />
         <item itemvalue="Spring Boot.ProductServer" />
         <item itemvalue="Spring Boot.CategoryServer" />
-        <item itemvalue="Spring Boot.UserServer" />
-        <item itemvalue="Spring Boot.UserFeignApp" />
       </list>
     </recent_temporary>
   </component>
@@ -769,12 +554,12 @@
       <workItem from="1565038516976" duration="7334000" />
       <workItem from="1565046003994" duration="1321000" />
       <workItem from="1565100121526" duration="1051000" />
-      <workItem from="1565101203084" duration="3524000" />
+      <workItem from="1565101203084" duration="5931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80953000" />
+    <option name="totallyTimeSpent" value="83360000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -811,7 +596,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32739726" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.17945206" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.33972603" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.43835616" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -864,123 +649,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/resources/mybatis.mappers/CategoryMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/src/main/resources/bootstrap.yml" />
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/src/main/java/com/alag/agmall/business/module/category/feign/CategoryFeignApp.java" />
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/src/main/java/com/alag/agmall/business/module/product/feign/mapper/ProductMapper.java" />
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/src/main/java/com/alag/agmall/business/module/category/feign/config/FeignHeadConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/src/main/resources/bootstrap.yml" />
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/src/main/java/com/alag/agmall/business/module/product/feign/config/FeignHeadConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/mapper/ProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/resources/mybatis.mappers/ProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4539">
-          <caret line="2" column="86" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/Interceptor/WebConfigurer.java" />
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/Interceptor/LoginRequired.java" />
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/config/DruidConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-api/src/main/java/com/alag/agmall/business/module/category/api/model/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-api/src/main/java/com/alag/agmall/business/module/category/api/CategoryManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/src/main/java/com/alag/agmall/business/module/category/feign/controller/CategoryFeignController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-platform/config-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-user-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="40" selection-start-line="40" selection-end-line="41" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/java/com/alag/agmall/business/module/category/server/Interceptor/AuthorityInterceptor.java" />
-    <entry file="file://$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-product-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/Interceptor/AuthorityInterceptor.java" />
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/java/com/alag/agmall/business/module/category/server/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/java/com/alag/agmall/business/module/category/server/CategoryServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -988,13 +657,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/java/com/alag/agmall/business/module/category/server/controller/CategoryManageServerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -1147,24 +809,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/ProductbackServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/config/DruidConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/controller/ProductManageServerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-292">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1175,13 +840,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/controller/ProductManageServerController.java">
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/ProductbackServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-262">
-          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        <state relative-caret-position="140">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/src/main/java/com/alag/agmall/business/module/shipping/api/ShippingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/src/main/java/com/alag/agmall/business/module/shipping/api/model/Shipping.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/src/main/java/com/alag/agmall/business/module/shipping/feign/controller/CategoryFeignController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" selection-start-line="19" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/src/main/java/com/alag/agmall/business/module/category/feign/controller/CategoryFeignController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/src/main/java/com/alag/agmall/business/module/shipping/feign/config/FeignHeadConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign/src/main/java/com/alag/agmall/business/module/shipping/feign/controller/ShippingFeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="24" selection-start-line="24" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/resources/mybatis.mappers/ShippingMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2683">
+          <caret line="208" column="108" selection-start-line="208" selection-start-column="108" selection-end-line="208" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/mapper/ShippingMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/service/impl/ShippingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/config/DruidConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/service/ShippingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-shipping-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/java/com/alag/agmall/business/module/category/server/service/impl/CategoryServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/java/com/alag/agmall/business/module/category/server/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/src/main/java/com/alag/agmall/business/module/category/server/controller/CategoryManageServerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/ShippingServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/controller/ShippingServerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="48" column="81" selection-start-line="48" selection-start-column="81" selection-end-line="48" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -1236,7 +1067,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>productback-server</last-edited>
+          <last-edited>shipping-server</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -18,6 +18,7 @@
         <module>app-category</module>
         <module>app-product</module>
         <module>app-productback</module>
+        <module>app-shipping</module>
     </modules>
 
     <dependencies>

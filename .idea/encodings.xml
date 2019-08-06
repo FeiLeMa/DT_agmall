@@ -17,6 +17,10 @@
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-feignclient" charset="UTF-8" />

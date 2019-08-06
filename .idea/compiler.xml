@@ -10,8 +10,10 @@
         <module name="config-server" />
         <module name="productback-server" />
         <module name="user-feignclient" />
+        <module name="shipping-server" />
         <module name="all-api" />
         <module name="productback-feign" />
+        <module name="shipping-feign" />
         <module name="mybatis-generate" />
         <module name="product-feign" />
         <module name="category-api" />
@@ -22,6 +24,7 @@
         <module name="category-feign" />
         <module name="productback-api" />
         <module name="user-api" />
+        <module name="shipping-api" />
         <module name="business-core" />
       </profile>
     </annotationProcessing>
@@ -31,6 +34,7 @@
       <module name="app-category" target="1.8" />
       <module name="app-product" target="1.8" />
       <module name="app-productback" target="1.8" />
+      <module name="app-shipping" target="1.8" />
       <module name="app-user" target="1.8" />
       <module name="business-core" target="1.8" />
       <module name="business-module" target="1.8" />
@@ -47,6 +51,9 @@
       <module name="productback-api" target="1.8" />
       <module name="productback-feign" target="1.8" />
       <module name="productback-server" target="1.8" />
+      <module name="shipping-api" target="1.8" />
+      <module name="shipping-feign" target="1.8" />
+      <module name="shipping-server" target="1.8" />
       <module name="user-api" target="1.8" />
       <module name="user-feign" target="1.8" />
       <module name="user-feignclient" target="1.8" />
@@ -69,6 +76,9 @@
       <module name="productback-api" options="-parameters" />
       <module name="productback-feign" options="-parameters" />
       <module name="productback-server" options="-parameters" />
+      <module name="shipping-api" options="-parameters" />
+      <module name="shipping-feign" options="-parameters" />
+      <module name="shipping-server" options="-parameters" />
       <module name="user-api" options="-parameters" />
       <module name="user-feign" options="-parameters" />
       <module name="user-feignclient" options="-parameters" />
