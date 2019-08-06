@@ -17,6 +17,7 @@
         <module>all-api</module>
         <module>app-category</module>
         <module>app-product</module>
+        <module>app-productback</module>
     </modules>
 
     <dependencies>

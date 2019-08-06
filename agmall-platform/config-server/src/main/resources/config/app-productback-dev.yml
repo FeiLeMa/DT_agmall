@@ -1,0 +1,7 @@
+server:
+  port: 8094
+spring:
+  application:
+    name: app-productback
+  profiles:
+    active: dev
