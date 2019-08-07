@@ -21,4 +21,8 @@ public interface ProductService {
     ServerResponse<PageInfo> getListByKeyword(String keyword, Integer categoryId, Integer pageNum, Integer pageSize);
 
     ServerResponse<Product> getPOJOProductById(Integer id);
+
+    ServerResponse<Integer> getStockById(Integer id);
+
+    ServerResponse<Integer> modifyProduct(Product product);
 }

@@ -75,4 +75,16 @@ public class ProductController {
     public ServerResponse<Product> getPJPById(@RequestParam("id") Integer id) {
         return productService.getPOJOProductById(id);
     }
+
+
+//    =============feign=====================
+    @GetMapping("get_stock")
+    public ServerResponse<Integer> getStock(@RequestParam("id") Integer id) {
+        return productService.getStockById(id);
+    }
+
+    @PutMapping("modify")
+    public ServerResponse<Integer> modifyProduct(@RequestBody Product product) {
+        return productService.modifyProduct(product);
+    }
 }

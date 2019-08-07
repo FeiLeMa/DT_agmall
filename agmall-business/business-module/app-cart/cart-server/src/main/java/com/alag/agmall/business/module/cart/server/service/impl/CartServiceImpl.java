@@ -98,6 +98,24 @@ public class CartServiceImpl implements CartService {
         return ServerResponse.createBySuccess(cartMapper.getCountByUserId(userId));
     }
 
+    @Override
+    public ServerResponse<List<Cart>> getCartByUserId(Integer userId) {
+        List<Cart> carts = cartMapper.selectAllCartByUserId(userId);
+
+        return ServerResponse.createBySuccess(carts);
+    }
+
+    @Override
+    public ServerResponse<List<Cart>> getCheckCardByUserId(Integer userId) {
+        List<Cart> carts = cartMapper.selectCheckedCardByUserId(userId);
+        return ServerResponse.createBySuccess(carts);
+    }
+
+    @Override
+    public ServerResponse<Integer> delById(Integer id) {
+        return ServerResponse.createBySuccess(cartMapper.deleteByPrimaryKey(id));
+    }
+
     private CartVo getCartVo(Integer userId) {
         BigDecimal totalPrice = new BigDecimal("0");
         CartVo cartVo = new CartVo();

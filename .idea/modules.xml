@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-cart/app-cart.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-cart/app-cart.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/app-category.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/app-category.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-order/app-order.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-order/app-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/app-pay.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-pay/app-pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/app-productback.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-productback/app-productback.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/app-shipping.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/app-shipping.iml" />
@@ -21,6 +23,12 @@
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/category-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/category-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-platform/config-server/config-server.iml" filepath="$PROJECT_DIR$/agmall-platform/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-platform/mybatis-generate/mybatis-generate.iml" filepath="$PROJECT_DIR$/agmall-platform/mybatis-generate/mybatis-generate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-api/order-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-api/order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/order-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/order-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/order-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/order-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-api/pay-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-api/pay-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-feign/pay-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-feign/pay-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/pay-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/pay-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-api/product-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-api/product-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/product-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign/product-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/product-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/product-server.iml" />

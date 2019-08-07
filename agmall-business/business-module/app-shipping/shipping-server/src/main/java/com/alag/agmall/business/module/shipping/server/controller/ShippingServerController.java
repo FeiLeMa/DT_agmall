@@ -27,8 +27,9 @@ public class ShippingServerController {
         }
         return shippingService.add(user.getId(), shipping);
     }
+
     @DeleteMapping("del")
-    public ServerResponse del(HttpSession session,@RequestParam("id") Integer id) {
+    public ServerResponse del(HttpSession session, @RequestParam("id") Integer id) {
         User user = (User) session.getAttribute(Const.CURRENT_USER);
         if (user == null) {
             return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), "请登录后再操作");
@@ -55,13 +56,21 @@ public class ShippingServerController {
     }
 
     @GetMapping("list")
-    public ServerResponse<PageInfo> list(@RequestParam(value = "pageNum",defaultValue = "1")Integer pageNum,
-                                         @RequestParam(value = "pageSize",defaultValue = "10")Integer pageSize,
+    public ServerResponse<PageInfo> list(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
+                                         @RequestParam(value = "pageSize", defaultValue = "10") Integer pageSize,
                                          HttpSession session) {
         User user = (User) session.getAttribute(Const.CURRENT_USER);
         if (user == null) {
             return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), "请登录后再操作");
         }
-        return shippingService.list(user.getId(), pageNum,pageSize);
+        return shippingService.list(user.getId(), pageNum, pageSize);
+    }
+
+
+    //    ================feign=================
+    @GetMapping("get_shipping")
+    public ServerResponse<Shipping> getShipping(@RequestParam("id") Integer id) {
+        return shippingService.getShippingById(id);
     }
 }
+

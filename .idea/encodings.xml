@@ -13,6 +13,14 @@
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-product" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-product/product-feign" charset="UTF-8" />

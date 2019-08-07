@@ -4,12 +4,15 @@ import com.alag.agmall.business.core.common.Const;
 import com.alag.agmall.business.core.common.ResponseCode;
 import com.alag.agmall.business.core.common.ServerResponse;
 import com.alag.agmall.business.core.vo.CartVo;
+import com.alag.agmall.business.module.cart.api.model.Cart;
 import com.alag.agmall.business.module.cart.server.service.CartService;
 import com.alag.agmall.business.module.user.api.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/cart/")
@@ -103,5 +106,22 @@ public class CartController {
             return ServerResponse.createBySuccess(0);
         }
         return cartService.getProductCountInCart(currentUser.getId());
+    }
+
+//    ==============feign==============
+
+    @GetMapping("get_cart")
+    public ServerResponse<List<Cart>> getCart(@RequestParam("userId") Integer userId) {
+        return cartService.getCartByUserId(userId);
+    }
+
+    @GetMapping("get_checked_cart")
+    public ServerResponse<List<Cart>> getCheckedCart(@RequestParam("userId") Integer userId) {
+        return cartService.getCheckCardByUserId(userId);
+    }
+
+    @DeleteMapping("del")
+    public ServerResponse<Integer> delCart(Integer id) {
+        return cartService.delById(id);
     }
 }

@@ -65,4 +65,10 @@ public class ShippingServiceImpl implements ShippingService {
         PageInfo pageInfo = new PageInfo(shippingList);
         return ServerResponse.createBySuccess(pageInfo);
     }
+
+    @Override
+    public ServerResponse<Shipping> getShippingById(Integer id) {
+        Shipping shipping = shippingMapper.selectByPrimaryKey(id);
+        return ServerResponse.createBySuccess(shipping);
+    }
 }

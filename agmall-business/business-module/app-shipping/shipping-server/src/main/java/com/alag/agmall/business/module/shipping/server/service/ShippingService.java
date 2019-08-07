@@ -14,4 +14,6 @@ public interface ShippingService {
     ServerResponse<Shipping> select(Integer id, Integer shippingId);
 
     ServerResponse<PageInfo> list(Integer id, Integer pageNum, Integer pageSize);
+
+    ServerResponse<Shipping> getShippingById(Integer id);
 }

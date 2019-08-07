@@ -25,4 +25,9 @@ public interface ShippingController {
     @GetMapping("list")
     ServerResponse<PageInfo> list(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                   @RequestParam(value = "pageSize", defaultValue = "10") Integer pageSize);
+
+
+    @GetMapping("get_shipping")
+    ServerResponse<Shipping> getShipping(@RequestParam("id") Integer id);
+
 }

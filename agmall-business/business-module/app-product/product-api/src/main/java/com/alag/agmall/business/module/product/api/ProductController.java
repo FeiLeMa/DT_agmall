@@ -38,6 +38,20 @@ public interface ProductController {
                                     @RequestParam(value = "productName") String productName,
                                     @RequestParam(value = "productId") Integer productId);
 
+
+
+    //    ==============feign================
     @GetMapping("get_pj_prodcut")
     ServerResponse<Product> getPJPById(@RequestParam("id") Integer id);
+
+    @GetMapping("get_stock")
+    ServerResponse<Integer> getStock(@RequestParam("id") Integer id);
+
+    @PutMapping("modify")
+    ServerResponse<Integer> modifyProduct(@RequestBody Product product);
+
+
+
+
 }
+

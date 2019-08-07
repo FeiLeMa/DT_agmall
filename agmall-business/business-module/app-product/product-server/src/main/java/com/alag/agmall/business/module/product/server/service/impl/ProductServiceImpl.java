@@ -221,4 +221,16 @@ public class ProductServiceImpl implements ProductService {
 
         return ServerResponse.createBySuccess(product);
     }
+
+    @Override
+    public ServerResponse<Integer> getStockById(Integer id) {
+        Integer stock = productMapper.selectStockByProductId(id);
+        return ServerResponse.createBySuccess(stock);
+    }
+
+    @Override
+    public ServerResponse<Integer> modifyProduct(Product product) {
+        int row = productMapper.updateByPrimaryKeySelective(product);
+        return ServerResponse.createBySuccess(row);
+    }
 }
