@@ -2,31 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fe24db6-7814-4cfd-be95-615add38df0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/AlipayServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/controller/AlipayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/service/AlipayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/service/impl/AlipayServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/templates/alipay_call_back.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/templates/toAlipay.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-alipay-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-core/src/main/resources/agmall.properties" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-core/src/main/resources/agmall.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-api/src/main/java/com/alag/agmall/business/module/order/api/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-api/src/main/java/com/alag/agmall/business/module/order/api/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-api/target/classes/com/alag/agmall/business/module/order/api/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-api/target/classes/com/alag/agmall/business/module/order/api/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/src/main/java/com/alag/agmall/business/module/order/feign/controller/OrderFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/src/main/java/com/alag/agmall/business/module/order/feign/controller/OrderFeignController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/controller/OrderServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/controller/OrderServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/controller/OrderServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/controller/OrderServerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-api/src/main/java/com/alag/agmall/business/module/pay/api/PayController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-pay/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/exception/BizException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/page/PageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/page/PageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/vo/PageParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/TransactionMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/TransactionMessageServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agmall-business/business-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agmall-platform/mybatis-generate/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-platform/mybatis-generate/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/agmall-platform/eureka-server/target/" />
     <ignored path="$PROJECT_DIR$/agmall-platform/config-server/target/" />
@@ -70,6 +57,14 @@
     <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-api/target/" />
     <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/target/" />
     <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-alipay/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-dt-pay-manager/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-dt-pay-manager/dtpmanager-api/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-dt-pay-manager/dtpmanager-feign/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-dt-pay-manager/dtpmanager-server/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/target/" />
+    <ignored path="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,11 +93,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/controller/AlipayController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/agmall-platform/mybatis-generate/src/main/resources/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+            <state relative-caret-position="185">
+              <caret line="44" column="92" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/TransactionMessageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="87" column="28" lean-forward="true" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,19 +115,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/templates/alipay_call_back.html">
+        <entry file="jar://$USER_HOME$/Repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/AccessLevel.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/agmall-business/business-core/src/main/resources/agmall.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="100">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -134,16 +129,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>com.alag.mmall.model.User</find>
-      <find>\)\s\{\n[[\s]+[\S]+]+</find>
       <find>redis</find>
       <find>parameterType=&quot;com.alag.mmall.model.User&quot;</find>
       <find>checkValid</find>
@@ -159,7 +152,6 @@
       <find>productService</find>
       <find>HttpSession session,</find>
       <find>com.alag.mmall.model.Shipping</find>
-      <find>public</find>
       <find>com.alag.mmall.model.Cart</find>
       <find>productMapper</find>
       <find>HttpServletRequest request</find>
@@ -171,6 +163,10 @@
       <find>closeOrder</find>
       <find>@ResponseBody</find>
       <find>orderService</find>
+      <find>throws MessageBizException</find>
+      <find>RpTransactionMessage</find>
+      <find>public</find>
+      <find>(RpTransactionMessage rpTransactionMessage);</find>
     </findStrings>
     <replaceStrings>
       <replace>com.alag.agmall.business.module.user.api.User</replace>
@@ -188,6 +184,8 @@
       <replace>com.alag.agmall.business.module.order.api.model.OrderItem</replace>
       <replace>orderFeign</replace>
       <replace>payService</replace>
+      <replace>@RequestBody TransactionMessage</replace>
+      <replace>(@RequestBody TransactionMessage transactionMessage);</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/agmall-business/business-module/app-user/user-server/src/main/java</dir>
@@ -199,16 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/mapper/OrderMapper.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/pom.xml" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-server/src/main/java/com/alag/agmall/business/module/cart/server/mapper/CartMapper.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/controller/ProductController.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/service/ProductService.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api/src/main/java/com/alag/agmall/business/module/shipping/api/ShippingController.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/controller/ShippingServerController.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/service/ShippingService.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server/src/main/java/com/alag/agmall/business/module/shipping/server/service/impl/ShippingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/product-server/src/main/java/com/alag/agmall/business/module/product/server/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-server/src/main/java/com/alag/agmall/business/module/cart/server/controller/CartController.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-server/src/main/java/com/alag/agmall/business/module/cart/server/service/CartService.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-server/src/main/java/com/alag/agmall/business/module/cart/server/service/impl/CartServiceImpl.java" />
@@ -243,13 +231,23 @@
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/PayServer.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/pom.xml" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/AlipayServer.java" />
-        <option value="$PROJECT_DIR$/agmall-business/business-module/pom.xml" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/src/main/java/com/alag/agmall/business/module/order/feign/controller/OrderFeignController.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/templates/toAlipay.html" />
         <option value="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-alipay-dev.yml" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/controller/AlipayController.java" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/templates/alipay_call_back.html" />
         <option value="$PROJECT_DIR$/agmall-business/business-core/src/main/resources/agmall.properties" />
+        <option value="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/exception/BizException.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-dt-pay-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/TransactionMessageServer.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-platform/mybatis-generate/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/model/TransactionMessage.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/page/PageBean.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/page/PageParam.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/vo/PageParams.java" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/TransactionMessageController.java" />
       </list>
     </option>
   </component>
@@ -264,14 +262,29 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis-generate" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis-generate" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis-generate" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="725" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -284,7 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -302,6 +314,57 @@
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
+              <item name="business-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
+              <item name="business-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
+              <item name="business-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
+              <item name="business-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
+              <item name="business-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
+              <item name="business-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -309,23 +372,23 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-alipay" type="462c0819:PsiDirectoryNode" />
+              <item name="app-product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-alipay" type="462c0819:PsiDirectoryNode" />
-              <item name="alipay-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-alipay" type="462c0819:PsiDirectoryNode" />
-              <item name="alipay-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -333,8 +396,8 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-alipay" type="462c0819:PsiDirectoryNode" />
-              <item name="alipay-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -343,8 +406,8 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-alipay" type="462c0819:PsiDirectoryNode" />
-              <item name="alipay-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -354,8 +417,8 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-alipay" type="462c0819:PsiDirectoryNode" />
-              <item name="alipay-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -366,75 +429,42 @@
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-alipay" type="462c0819:PsiDirectoryNode" />
-              <item name="alipay-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="app-transaction-message-pay" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-alipay" type="462c0819:PsiDirectoryNode" />
-              <item name="alipay-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="app-transaction-message-pay" type="462c0819:PsiDirectoryNode" />
+              <item name="TMessage-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-alipay" type="462c0819:PsiDirectoryNode" />
-              <item name="alipay-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-transaction-message-pay" type="462c0819:PsiDirectoryNode" />
+              <item name="TMessage-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
               <item name="business-module" type="462c0819:PsiDirectoryNode" />
-              <item name="app-order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="app-transaction-message-pay" type="462c0819:PsiDirectoryNode" />
+              <item name="TMessage-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
+              <item name="business-module" type="462c0819:PsiDirectoryNode" />
+              <item name="app-transaction-message-pay" type="462c0819:PsiDirectoryNode" />
+              <item name="TMessage-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -442,26 +472,68 @@
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
-              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
+              <item name="business-module" type="462c0819:PsiDirectoryNode" />
+              <item name="app-transaction-message-pay" type="462c0819:PsiDirectoryNode" />
+              <item name="TMessage-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-business" type="462c0819:PsiDirectoryNode" />
+              <item name="business-module" type="462c0819:PsiDirectoryNode" />
+              <item name="app-transaction-message-pay" type="462c0819:PsiDirectoryNode" />
+              <item name="TMessage-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
               <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-generate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-generate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-generate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DT_agmall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DT_agmall" type="462c0819:PsiDirectoryNode" />
+              <item name="agmall-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-generate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -473,34 +545,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/src/main/resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.alag.agmall.business.module.pay.server.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core" />
       <recent name="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources" />
       <recent name="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config" />
       <recent name="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-api/src/main/resources" />
-      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.alag.agmall.business.module.message.server" />
+      <recent name="com.alag.agmall.business.module.message.api.model" />
+      <recent name="com.alag.agmall.business.core.exception" />
       <recent name="com.alag.agmall.business.module.alipay.server" />
       <recent name="com.alag.agmall.business.module.pay.server" />
-      <recent name="com.alag.agmall.business.module.pay.server.config" />
-      <recent name="com.alag.agmall.business.module.order.server.mapper" />
-      <recent name="com.alag.agmall.business.module.order.api.model" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.alag.agmall.business.module.pay.server.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/resources/mybatis.mappers" />
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -639,12 +712,14 @@
       <workItem from="1565122703365" duration="649000" />
       <workItem from="1565123388364" duration="14921000" />
       <workItem from="1565152786507" duration="399000" />
-      <workItem from="1565190431919" duration="7598000" />
+      <workItem from="1565190431919" duration="7890000" />
+      <workItem from="1565203615863" duration="536000" />
+      <workItem from="1565206748235" duration="5331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111203000" />
+    <option name="totallyTimeSpent" value="117362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -659,7 +734,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31502423" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22617124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -675,18 +750,18 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49919224" weight="0.23561645" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2890411" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33333334" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.20684932" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32739726" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32739726" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.17945206" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49919224" visible="true" weight="0.5" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49919224" weight="0.49921012" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.6090469" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.592084" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32956383" />
@@ -747,141 +822,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-cart/cart-feign/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" selection-start-line="19" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-feign/src/main/java/com/alag/agmall/business/module/pay/feign/config/FeignHeadConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-feign/src/main/java/com/alag/agmall/business/module/pay/feign/controller/PayFeignClent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="58" selection-start-line="58" selection-end-line="84" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1403">
-          <caret line="86" column="51" lean-forward="true" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/controller/OrderServerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
-          <folding>
-            <element signature="e#4622#4623#0" expanded="true" />
-            <element signature="e#4649#4650#0" expanded="true" />
-            <element signature="e#4781#4782#0" expanded="true" />
-            <element signature="e#4819#4820#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/config/DruidConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-server/src/main/java/com/alag/agmall/business/module/user/server/controller/UserServerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/resources/templates/alipay_returlPage.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/Repository/org/springframework/boot/spring-boot-autoconfigure/2.1.6.RELEASE/spring-boot-autoconfigure-2.1.6.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="84" column="24" lean-forward="true" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/resources/templates/toAlipay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-api/src/main/java/com/alag/agmall/business/module/pay/api/PayController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Repository/org/springframework/cloud/spring-cloud-openfeign-core/2.1.1.RELEASE/spring-cloud-openfeign-core-2.1.1.RELEASE.jar!/org/springframework/cloud/openfeign/EnableFeignClients.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/src/main/java/com/alag/agmall/business/module/productback/server/ProductbackServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-product-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-productback-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-api/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/productback-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -909,43 +849,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-pay-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-pay-dev.yml" />
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/resources/bootstrap.yml" />
     <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/service/impl/PayServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="90" column="15" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/PayServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/service/impl/PayServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/PayServer.java" />
     <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -953,13 +863,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/pom.xml" />
     <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
@@ -984,35 +888,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/service/PayService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/controller/PayServerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-509">
-          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-            <element signature="e#1312#1313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/service/PayService.java" />
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-pay/pay-server/src/main/java/com/alag/agmall/business/module/pay/server/controller/PayServerController.java" />
     <entry file="file://$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-user-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1091,21 +968,141 @@
     <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/templates/alipay_call_back.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agmall-business/business-core/src/main/resources/agmall.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <caret line="8" column="22" selection-start-line="8" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/controller/AlipayController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
+        <state relative-caret-position="546">
           <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-core/src/main/resources/agmall.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/dt/common/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-dt-pay-manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-dt-pay-manager/dtpmanager-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-dt-pay-manager/dtpmanager-feign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-dt-pay-manager/dtpmanager-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/exception/BizException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-product/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-platform/mybatis-generate/src/main/resources/generator.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/TransactionMessageServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/model/TransactionMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-platform/mybatis-generate/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="44" column="92" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/page/PageBean.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/page/PageParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/AccessLevel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/vo/PageParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/TransactionMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="87" column="28" lean-forward="true" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1163,7 +1160,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>order-api</last-edited>
+          <last-edited>TMessage-api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

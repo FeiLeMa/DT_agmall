@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DT_agmall.iml" filepath="$PROJECT_DIR$/.idea/DT_agmall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/TMessage-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/TMessage-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/TMessage-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/TMessage-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/TMessage-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/TMessage-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/agmall-business.iml" filepath="$PROJECT_DIR$/agmall-business/agmall-business.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/alipay-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/alipay-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" />
@@ -13,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-product/app-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-productback/app-productback.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-productback/app-productback.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/app-shipping.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-shipping/app-shipping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/app-transaction-message-pay.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/app-transaction-message-pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-user/app-user.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-user/app-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-core/business-core.iml" filepath="$PROJECT_DIR$/agmall-business/business-core/business-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/business-module.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/business-module.iml" />

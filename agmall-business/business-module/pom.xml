@@ -22,6 +22,7 @@
         <module>app-cart</module>
         <module>app-order</module>
         <module>app-alipay</module>
+        <module>app-transaction-message-pay</module>
     </modules>
 
     <dependencies>

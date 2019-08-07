@@ -42,8 +42,8 @@
             targetProject     指定在该项目下所在的路径|指定生成到的工程名称
             E://course//projects//idea-work//p2p//exterface//src//main//java
         -->
-        <javaModelGenerator targetPackage="com.alag.agmall.business.module.user.api"
-                            targetProject="/Users/alag/Desktop/DT/DT_agmall/agmall-business/business-module/app-user/user-api/src/main/java">
+        <javaModelGenerator targetPackage="com.alag.agmall.business.module.message.api.model"
+                            targetProject="/Users/alag/Desktop/DT/DT_agmall/agmall-business/business-module/app-transaction-message-pay/TMessage-api/src/main/java">
             <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
             <property name="enableSubPackages" value="false"/>
             <!-- 是否对model添加 构造函数 true添加，false不添加-->
@@ -55,8 +55,8 @@
         </javaModelGenerator>
 
         <!--Mapper映射文件生成所在的目录 为每一个数据库的表生成对应的SqlMap文件 -->
-        <sqlMapGenerator targetPackage="com.alag.agmall.business.module.user.mapper"
-                         targetProject="/Users/alag/Desktop/DT/DT_agmall/agmall-business/business-module/app-user/user-server/src/main/java">
+        <sqlMapGenerator targetPackage="com.alag.agmall.business.module.message.server.mapper"
+                         targetProject="/Users/alag/Desktop/DT/DT_agmall/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
@@ -65,52 +65,52 @@
                 type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator targetPackage="com.alag.agmall.business.module.user.mapper"
-                             targetProject="/Users/alag/Desktop/DT/DT_agmall/agmall-business/business-module/app-user/user-server/src/main/java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.alag.agmall.business.module.message.server.mapper"
+                             targetProject="/Users/alag/Desktop/DT/DT_agmall/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
 
-        <table tableName="mmall_cart" domainObjectName="Cart"
+        <table tableName="mmall_transaction_message" domainObjectName="TransactionMessage"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
         </table>
 
-        <table tableName="mmall_category" domainObjectName="Category"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="mmall_order" domainObjectName="Order"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="mmall_order_item" domainObjectName="OrderItem"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="mmall_pay_info" domainObjectName="PayInfo"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="mmall_product" domainObjectName="Product"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="mmall_shipping" domainObjectName="Shopping"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
-        <table tableName="mmall_user" domainObjectName="User"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
+<!--        <table tableName="mmall_category" domainObjectName="Category"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false">-->
+<!--        </table>-->
+<!--        <table tableName="mmall_order" domainObjectName="Order"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false">-->
+<!--        </table>-->
+<!--        <table tableName="mmall_order_item" domainObjectName="OrderItem"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false">-->
+<!--        </table>-->
+<!--        <table tableName="mmall_pay_info" domainObjectName="PayInfo"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false">-->
+<!--        </table>-->
+<!--        <table tableName="mmall_product" domainObjectName="Product"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false">-->
+<!--        </table>-->
+<!--        <table tableName="mmall_shipping" domainObjectName="Shopping"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false">-->
+<!--        </table>-->
+<!--        <table tableName="mmall_user" domainObjectName="User"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false">-->
+<!--        </table>-->
     </context>
 </generatorConfiguration>
