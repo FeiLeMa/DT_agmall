@@ -1,7 +1,12 @@
 package com.alag.agmall.business.module.order.api;
 
 import com.alag.agmall.business.core.common.ServerResponse;
+import com.alag.agmall.business.module.order.api.model.Order;
+import com.alag.agmall.business.module.order.api.model.OrderItem;
+import com.alag.agmall.business.module.order.api.model.PayInfo;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("order")
@@ -13,7 +18,7 @@ public interface OrderController {
             @RequestParam(value = "shippingId", required = true) Integer shippingId);
 
     @PutMapping("canncel")
-    ServerResponse canncel(Long orderNo);
+    ServerResponse canncel(@RequestParam("orderNo") Long orderNo);
 
     /**
      * 没有下单之前的购物车查询
@@ -25,7 +30,7 @@ public interface OrderController {
     ServerResponse getCartProduct();
 
     @GetMapping("detail")
-    ServerResponse getDetail(Long orderNo);
+    ServerResponse getDetail(@RequestParam("orderNo")Long orderNo);
 
     @GetMapping("list")
     ServerResponse list(
@@ -34,5 +39,23 @@ public interface OrderController {
 
     @RequestMapping("query_order_pay_status")
     ServerResponse<Boolean> queryOrderPayStatus(@RequestParam("orderNo") Long orderNo);
+
+    //    ==============feign===========
+    @GetMapping("get_order_f")
+    ServerResponse<Order> queryOrderF(@RequestParam("orderNo") Long orderNo,
+                                     @RequestParam("userId") Integer userId);
+
+    @GetMapping("get_order_item")
+    ServerResponse<List<OrderItem>> queryOrderItem(@RequestParam("orderNo") Long orderNo,
+                                                   @RequestParam("userId") Integer userId);
+
+    @GetMapping("get_order_s")
+    ServerResponse<Order> queryOrderS(@RequestParam("orderNo") Long orderNo);
+
+    @PutMapping("modify_order")
+    ServerResponse<Integer> modifyOrder(@RequestBody Order order);
+
+    @PostMapping("add_pay_info")
+    ServerResponse<Integer> addPayInfo(@RequestBody PayInfo payInfo);
 
 }

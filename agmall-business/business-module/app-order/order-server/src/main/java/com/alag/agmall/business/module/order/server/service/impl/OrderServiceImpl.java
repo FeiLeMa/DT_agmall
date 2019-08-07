@@ -13,8 +13,10 @@ import com.alag.agmall.business.module.cart.api.model.Cart;
 import com.alag.agmall.business.module.cart.feign.controller.CartFeignClient;
 import com.alag.agmall.business.module.order.api.model.Order;
 import com.alag.agmall.business.module.order.api.model.OrderItem;
+import com.alag.agmall.business.module.order.api.model.PayInfo;
 import com.alag.agmall.business.module.order.server.mapper.OrderItemMapper;
 import com.alag.agmall.business.module.order.server.mapper.OrderMapper;
+import com.alag.agmall.business.module.order.server.mapper.PayInfoMapper;
 import com.alag.agmall.business.module.order.server.service.OrderService;
 import com.alag.agmall.business.module.product.api.model.Product;
 import com.alag.agmall.business.module.product.feign.controller.ProductFeignClient;
@@ -45,6 +47,45 @@ public class OrderServiceImpl implements OrderService {
     private ProductFeignClient productFeignClient;
     @Autowired
     private ShippingFeignClient shippingFeignClient;
+    @Autowired
+    private PayInfoMapper payInfoMapper;
+
+    @Override
+    public ServerResponse<Order> selectOrderByOrderNoAndUserId(Long orderNo, Integer userId) {
+        Order order = orderMapper.selectByOrderNoAndUserId(orderNo, userId);
+        if (order == null) {
+            return ServerResponse.createByErrorMessage("没找到该订单");
+        }
+        return ServerResponse.createBySuccess(order);
+    }
+
+    @Override
+    public ServerResponse<List<OrderItem>> selectOrderItemByOrderNoAndUserId(Long orderNo, Integer userId) {
+        List<OrderItem> orderItemList = orderItemMapper.selectByOrderNoAndUserId(orderNo, userId);
+
+        return ServerResponse.createBySuccess(orderItemList);
+    }
+
+    @Override
+    public ServerResponse<Order> selectOrderByOrderNo(Long orderNo) {
+        Order order = orderMapper.selectByOrderNo(orderNo);
+        if (order == null) {
+            return ServerResponse.createByErrorMessage("没有该订单");
+        }
+        return ServerResponse.createBySuccess(order);
+    }
+
+    @Override
+    public ServerResponse<Integer> updateOrder(Order order) {
+        int row = orderMapper.updateByPrimaryKeySelective(order);
+        return ServerResponse.createBySuccess(row);
+    }
+
+    @Override
+    public ServerResponse<Integer> insertPayInfo(PayInfo payInfo) {
+        int row = payInfoMapper.insert(payInfo);
+        return ServerResponse.createBySuccess(row);
+    }
 
     @Override
     public ServerResponse createOrder(Integer userId, Integer shippingId) {
@@ -171,7 +212,7 @@ public class OrderServiceImpl implements OrderService {
 
                 row = productFeignClient.modifyProduct(product).getData();
                 if (row > 0) {
-                    log.info("产品id{},库存{},已经恢复至{}",id,stock,stock+orderItem.getQuantity());
+                    log.info("产品id{},库存{},已经恢复至{}", id, stock, stock + orderItem.getQuantity());
                 }
             }
         }
@@ -324,6 +365,7 @@ public class OrderServiceImpl implements OrderService {
         Long nowTime = System.currentTimeMillis();
         return nowTime + new Random().nextInt(100);
     }
+
     @Override
     public ServerResponse<Boolean> getOrderStatusByOrderNoAndUserId(Integer userId, Long orderNo) {
         Order order = orderMapper.selectByOrderNoAndUserId(orderNo, userId);

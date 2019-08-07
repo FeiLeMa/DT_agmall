@@ -13,6 +13,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-pay/pom.xml" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/pom.xml" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/pom.xml" />
       </set>

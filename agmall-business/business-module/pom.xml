@@ -21,7 +21,7 @@
         <module>app-shipping</module>
         <module>app-cart</module>
         <module>app-order</module>
-        <module>app-pay</module>
+        <module>app-alipay</module>
     </modules>
 
     <dependencies>

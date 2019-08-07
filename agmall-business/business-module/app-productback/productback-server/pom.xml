@@ -22,7 +22,6 @@
             <artifactId>product-feign</artifactId>
             <version>1.0.0</version>
         </dependency>
-<!--        feign客户端-->
         <dependency>
             <groupId>com.alag.agmall.business</groupId>
             <artifactId>category-feign</artifactId>

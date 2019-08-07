@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: app-alipay
+  profiles:
+    active: dev
+  redis:
+    database: 0
+    host: 47.240.11.229
+    port: 6379
+    password: 123456
+    timeout: 2000ms
+    store-type: redis

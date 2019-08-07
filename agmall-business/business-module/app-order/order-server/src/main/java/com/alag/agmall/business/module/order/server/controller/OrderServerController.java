@@ -3,6 +3,9 @@ package com.alag.agmall.business.module.order.server.controller;
 import com.alag.agmall.business.core.common.Const;
 import com.alag.agmall.business.core.common.ResponseCode;
 import com.alag.agmall.business.core.common.ServerResponse;
+import com.alag.agmall.business.module.order.api.model.Order;
+import com.alag.agmall.business.module.order.api.model.OrderItem;
+import com.alag.agmall.business.module.order.api.model.PayInfo;
 import com.alag.agmall.business.module.order.server.service.OrderService;
 import com.alag.agmall.business.module.user.api.model.User;
 import lombok.extern.slf4j.Slf4j;
@@ -10,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @RestController
 @RequestMapping("order")
@@ -86,6 +90,33 @@ public class OrderServerController {
             return response;
         }
         return ServerResponse.createBySuccess(false);
+    }
+
+    @GetMapping("get_order_f")
+    ServerResponse<Order> queryOrderF(@RequestParam("orderNo") Long orderNo,
+                                     @RequestParam("userId") Integer userId) {
+        return orderService.selectOrderByOrderNoAndUserId(orderNo, userId);
+    }
+
+    @GetMapping("get_order_item")
+    ServerResponse<List<OrderItem>> queryOrderItem(@RequestParam("orderNo") Long orderNo,
+                                                   @RequestParam("userId") Integer userId) {
+        return orderService.selectOrderItemByOrderNoAndUserId(orderNo, userId);
+    }
+
+    @GetMapping("get_order_s")
+    ServerResponse<Order> queryOrderS(@RequestParam("orderNo") Long orderNo) {
+        return orderService.selectOrderByOrderNo(orderNo);
+    }
+
+    @PutMapping("modify_order")
+    ServerResponse<Integer> modifyOrder(@RequestBody Order order) {
+        return orderService.updateOrder(order);
+    }
+
+    @PostMapping("add_pay_info")
+    ServerResponse<Integer> addPayInfo(@RequestBody PayInfo payInfo) {
+        return orderService.insertPayInfo(payInfo);
     }
 
 }

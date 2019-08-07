@@ -6,40 +6,40 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="category-server" />
-        <module name="mybatis-generate" />
-        <module name="productback-server" />
-        <module name="user-feignclient" />
-        <module name="cart-server" />
-        <module name="order-feign" />
-        <module name="shipping-server" />
-        <module name="all-api" />
-        <module name="productback-feign" />
         <module name="shipping-feign" />
-        <module name="product-feign" />
-        <module name="cart-api" />
-        <module name="category-api" />
-        <module name="order-server" />
-        <module name="product-api" />
-        <module name="user-server" />
-        <module name="config-server" />
-        <module name="pay-server" />
-        <module name="pay-api" />
-        <module name="product-server" />
-        <module name="user-feign" />
-        <module name="cart-feign" />
-        <module name="category-feign" />
-        <module name="pay-feign" />
-        <module name="productback-api" />
-        <module name="user-api" />
-        <module name="order-api" />
         <module name="shipping-api" />
+        <module name="order-feign" />
+        <module name="product-api" />
+        <module name="shipping-server" />
+        <module name="product-feign" />
+        <module name="cart-server" />
+        <module name="mybatis-generate" />
+        <module name="productback-feign" />
+        <module name="user-feign" />
+        <module name="all-api" />
+        <module name="user-server" />
+        <module name="user-api" />
+        <module name="config-server" />
+        <module name="order-server" />
+        <module name="category-feign" />
+        <module name="order-api" />
+        <module name="cart-api" />
+        <module name="productback-api" />
+        <module name="alipay-server" />
+        <module name="user-feignclient" />
+        <module name="category-api" />
+        <module name="productback-server" />
+        <module name="category-server" />
+        <module name="cart-feign" />
+        <module name="product-server" />
         <module name="business-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="agmall-business" target="1.8" />
+      <module name="alipay-server" target="1.8" />
       <module name="all-api" target="1.8" />
+      <module name="app-alipay" target="1.8" />
       <module name="app-cart" target="1.8" />
       <module name="app-category" target="1.8" />
       <module name="app-order" target="1.8" />
@@ -83,6 +83,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="alipay-server" options="-parameters" />
       <module name="all-api" options="-parameters" />
       <module name="app-product" options="-parameters" />
       <module name="business-core" options="-parameters" />
