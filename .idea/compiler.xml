@@ -17,6 +17,7 @@
         <module name="mybatis-generate" />
         <module name="productback-feign" />
         <module name="user-feign" />
+        <module name="message-web" />
         <module name="all-api" />
         <module name="user-server" />
         <module name="user-api" />
@@ -46,6 +47,7 @@
       <module name="app-cart" target="1.8" />
       <module name="app-category" target="1.8" />
       <module name="app-dt-pay-manager" target="1.8" />
+      <module name="app-message-web" target="1.8" />
       <module name="app-order" target="1.8" />
       <module name="app-pay" target="1.8" />
       <module name="app-product" target="1.8" />
@@ -67,6 +69,7 @@
       <module name="dtpmanager-feign" target="1.8" />
       <module name="dtpmanager-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="message-web" target="1.8" />
       <module name="mybatis-generate" target="1.5" />
       <module name="order-api" target="1.8" />
       <module name="order-feign" target="1.8" />
@@ -100,6 +103,7 @@
       <module name="alipay-server" options="-parameters" />
       <module name="all-api" options="-parameters" />
       <module name="app-dt-pay-manager" options="-parameters" />
+      <module name="app-message-web" options="-parameters" />
       <module name="app-product" options="-parameters" />
       <module name="business-core" options="-parameters" />
       <module name="cart-api" options="-parameters" />
@@ -113,6 +117,7 @@
       <module name="dtpmanager-feign" options="-parameters" />
       <module name="dtpmanager-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="message-web" options="-parameters" />
       <module name="order-api" options="-parameters" />
       <module name="order-feign" options="-parameters" />
       <module name="order-server" options="-parameters" />

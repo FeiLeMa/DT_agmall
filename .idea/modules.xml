@@ -27,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/category-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign/category-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/category-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-category/category-server/category-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-platform/config-server/config-server.iml" filepath="$PROJECT_DIR$/agmall-platform/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-message-web/message-web/message-web.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-message-web/message-web/message-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-platform/mybatis-generate/mybatis-generate.iml" filepath="$PROJECT_DIR$/agmall-platform/mybatis-generate/mybatis-generate.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-api/order-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-api/order-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/order-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/order-feign.iml" />
