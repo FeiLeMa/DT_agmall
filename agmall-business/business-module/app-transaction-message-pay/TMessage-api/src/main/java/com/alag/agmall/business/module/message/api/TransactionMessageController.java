@@ -1,10 +1,9 @@
 package com.alag.agmall.business.module.message.api;
 
 import com.alag.agmall.business.core.common.ServerResponse;
-import com.alag.agmall.business.core.page.PageBean;
-import com.alag.agmall.business.core.page.PageParam;
-import com.alag.agmall.business.core.vo.PageParams;
+import com.alag.agmall.business.core.page.ParamBean;
 import com.alag.agmall.business.module.message.api.model.TransactionMessage;
+import com.github.pagehelper.PageInfo;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -28,7 +27,7 @@ public interface TransactionMessageController {
      * 比如：银行通知，它存储不成功，银行会继续发送
      */
     @PostMapping("save_and_send_message")
-    int saveAndSendMessage(@RequestBody TransactionMessage transactionMessage);
+    ServerResponse<Integer> saveAndSendMessage(@RequestBody TransactionMessage transactionMessage);
 
     /**
      * 直接发送消息.
@@ -77,12 +76,13 @@ public interface TransactionMessageController {
      * 重发某个消息队列中的全部已死亡的消息.
      */
     @PostMapping("r_send_all_message")
-    void reSendAllDeadMessageByQueueName(@RequestParam("queueName") String queueName, @RequestParam("batchSize") int batchSize);
+    void reSendAllDeadMessageByQueueName(@RequestParam("queueName") String queueName,
+                                         @RequestParam("batchSize") int batchSize);
 
     /**
      * 获取分页数据
      */
-    @GetMapping("list_page")
-    ServerResponse<PageBean> listPage(@RequestBody PageParams<PageParam> pageParams);
+    @PostMapping("list_page")
+    ServerResponse<PageInfo> listPage(@RequestBody ParamBean paramBean);
 
 }

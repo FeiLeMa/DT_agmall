@@ -11,5 +11,16 @@
 
     <artifactId>TMessage-feign</artifactId>
 
-
+<dependencies>
+    <dependency>
+        <groupId>com.alag.agmall.business</groupId>
+        <artifactId>TMessage-api</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+    <!--feign客户端-->
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-openfeign</artifactId>
+    </dependency>
+</dependencies>
 </project>
