@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DT_agmall.iml" filepath="$PROJECT_DIR$/.idea/DT_agmall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-platform/httpClient-thread/HttpClient-Thread.iml" filepath="$PROJECT_DIR$/agmall-platform/httpClient-thread/HttpClient-Thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/TMessage-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/TMessage-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/TMessage-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/TMessage-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/TMessage-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/TMessage-server.iml" />

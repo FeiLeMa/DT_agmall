@@ -150,6 +150,14 @@ public class Const {
 
     public interface TMessage {
         /**
+         * remark
+         */
+        String REMARK = "测试版";
+        /**
+         * 消息体数据类型
+         */
+        String MESSAGE_DATA_TYPE = "json";
+        /**
          * 保存的消息为空
          **/
         int SAVA_MESSAGE_IS_NULL = 100;
@@ -175,6 +183,20 @@ public class Const {
          * 最大重发次数
          */
         int MESSAGE_MAX_SEND_TIMES = 5;
+
+        /**
+         * 消息队列名称
+         */
+        String CONSUMER_QUEUE_NAME = "ACCOUNTING_NOTIFY";
+
+        /**
+         * 创建者
+         */
+        String CREATOR_NAME = "alag";
+        /**
+         * 修改者
+         */
+        String EDITOR_NAME = "alag";
     }
 
     public enum MessageEnum {

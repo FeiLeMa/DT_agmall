@@ -4,8 +4,11 @@ import com.alag.agmall.business.core.common.Const;
 import com.alag.agmall.business.core.common.ServerResponse;
 import com.alag.agmall.business.core.util.BigDecimalUtil;
 import com.alag.agmall.business.core.util.DateTimeUtil;
+import com.alag.agmall.business.core.util.IDGenerator;
 import com.alag.agmall.business.core.util.PropertiesUtil;
 import com.alag.agmall.business.module.alipay.server.service.AlipayService;
+import com.alag.agmall.business.module.message.api.model.TransactionMessage;
+import com.alag.agmall.business.module.message.feign.controller.TransactionMessageFeign;
 import com.alag.agmall.business.module.order.api.model.Order;
 import com.alag.agmall.business.module.order.api.model.OrderItem;
 import com.alag.agmall.business.module.order.api.model.PayInfo;
@@ -19,6 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -27,6 +31,8 @@ import java.util.Map;
 public class AlipayServiceImpl implements AlipayService {
     @Autowired
     private OrderFeignController orderFeign;
+    @Autowired
+    private TransactionMessageFeign tMessageFeign;
 
     @Override
     public ServerResponse<String> pay(Integer userId, Long orderNo) {
@@ -91,21 +97,62 @@ public class AlipayServiceImpl implements AlipayService {
         if (order.getStatus() >= Const.OrderStatusEnum.PAID.getCode()) {
             return ServerResponse.createBySuccess("支付宝重复调用");
         }
+        String msgId1 = IDGenerator.msgIDBuilder();
         if (Const.AlipayCallback.TRADE_STATUS_TRADE_SUCCESS.equals(tradeStatus)) {
+
             order.setPaymentTime(DateTimeUtil.strToDate(params.get("gmt_payment")));
             order.setStatus(Const.OrderStatusEnum.PAID.getCode());
-            orderFeign.modifyOrder(order);
+            TransactionMessage message = TransactionMessage.newTransactionMessage();
+            message.set(msg -> {
+                msg.setCreateTime(new Date());
+                msg.setUpdateTime(new Date());
+                msg.setConsumerQueue(Const.TMessage.CONSUMER_QUEUE_NAME);
+                msg.setCreator(Const.TMessage.CREATOR_NAME);
+                msg.setEditor(Const.TMessage.EDITOR_NAME);
+                msg.setId(IDGenerator.tMIDBuilder());
+                msg.setMessageId(msgId1);
+                msg.setMessageBody("添加支付时间，修改订单状态");
+                msg.setVersion(1);
+                msg.setMessageDataType(Const.TMessage.MESSAGE_DATA_TYPE);
+                msg.setRemark(Const.TMessage.REMARK);
+            });
+            ServerResponse response = tMessageFeign.saveMessageWaitingConfirm(message);
+            if (response.isSuccess()) {
+                tMessageFeign.confirmAndSendMessage(msgId1);
+            } else {
+                return ServerResponse.createByErrorMessage("预发送消息失败");
+            }
+//            orderFeign.modifyOrder(order);
+            String msgId2 = IDGenerator.msgIDBuilder();
+            PayInfo payInfo = new PayInfo();
+            payInfo.setUserId(order.getUserId());
+            payInfo.setOrderNo(order.getOrderNo());
+            payInfo.setPayPlatform(Const.PayPlatformEnum.ALIPAY.getCode());
+            payInfo.setPlatformNumber(tradeNo);
+            payInfo.setPlatformStatus(tradeStatus);
+
+            tMessageFeign.saveMessageWaitingConfirm(TransactionMessage.newTransactionMessage(msg -> {
+                msg.setId(IDGenerator.tMIDBuilder());
+                msg.setMessageId(msgId2);
+                msg.setMessageBody("添加支信息");
+                msg.setCreateTime(new Date());
+                msg.setUpdateTime(new Date());
+                msg.setConsumerQueue(Const.TMessage.CONSUMER_QUEUE_NAME);
+                msg.setCreator(Const.TMessage.CREATOR_NAME);
+                msg.setEditor(Const.TMessage.EDITOR_NAME);
+                msg.setVersion(1);
+                msg.setMessageDataType(Const.TMessage.MESSAGE_DATA_TYPE);
+                msg.setRemark(Const.TMessage.REMARK);
+            }));
+//        orderFeign.addPayInfo(payInfo);
+            if (response.isSuccess()) {
+                tMessageFeign.confirmAndSendMessage(msgId2);
+            } else {
+                return ServerResponse.createByErrorMessage("预发送消息失败");
+            }
+        } else {
+            return ServerResponse.createByErrorMessage("交易未成功");
         }
-
-        PayInfo payInfo = new PayInfo();
-        payInfo.setUserId(order.getUserId());
-        payInfo.setOrderNo(order.getOrderNo());
-        payInfo.setPayPlatform(Const.PayPlatformEnum.ALIPAY.getCode());
-        payInfo.setPlatformNumber(tradeNo);
-        payInfo.setPlatformStatus(tradeStatus);
-
-        orderFeign.addPayInfo(payInfo);
-
-        return ServerResponse.createBySuccess();
+        return ServerResponse.createBySuccess("预发送消息，确认消息成功！");
     }
 }

@@ -28,8 +28,6 @@ public class TMessageServiceImpl implements TMessageService {
         message.setStatus(Const.MessageEnum.WAITING_CONFIRM.getCode());
         message.setAreadlyDead(Const.TMessage.AREADLY_DEAD_NO);
         message.setMessageSendTimes(Const.TMessage.RE_SENT_TIMES_ZEROTH);
-        message.setCreateTime(new Date());
-        message.setUpdateTime(new Date());
 
         return ServerResponse.createBySuccess(transactionMessageMapper.insertSelective(message));
     }

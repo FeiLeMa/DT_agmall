@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/agmall-platform/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/agmall-business/pom.xml" />
         <option value="$PROJECT_DIR$/agmall-platform/mybatis-generate/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-platform/httpClient-thread/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

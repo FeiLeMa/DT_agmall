@@ -10,7 +10,8 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableEurekaClient
 @EnableRedisHttpSession
-@EnableFeignClients(basePackages = "com.alag.agmall.business.module.order.feign")
+@EnableFeignClients(basePackages = {"com.alag.agmall.business.module.order.feign",
+        "com.alag.agmall.business.module.message.feign"})
 public class AlipayServer {
     public static void main(String[] args) {
         SpringApplication.run(AlipayServer.class, args);

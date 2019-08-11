@@ -3,6 +3,7 @@ package com.alag.agmall.business.module.order.api.model;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.function.Consumer;
 
 public class Order implements Serializable {
     /**
@@ -122,7 +123,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.id
      *
      * @return the value of mmall_order.id
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Integer getId() {
@@ -134,7 +134,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.id
      *
      * @param id the value for mmall_order.id
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setId(Integer id) {
@@ -146,7 +145,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.order_no
      *
      * @return the value of mmall_order.order_no
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Long getOrderNo() {
@@ -158,7 +156,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.order_no
      *
      * @param orderNo the value for mmall_order.order_no
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setOrderNo(Long orderNo) {
@@ -170,7 +167,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.user_id
      *
      * @return the value of mmall_order.user_id
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Integer getUserId() {
@@ -182,7 +178,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.user_id
      *
      * @param userId the value for mmall_order.user_id
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setUserId(Integer userId) {
@@ -194,7 +189,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.shipping_id
      *
      * @return the value of mmall_order.shipping_id
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Integer getShippingId() {
@@ -206,7 +200,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.shipping_id
      *
      * @param shippingId the value for mmall_order.shipping_id
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setShippingId(Integer shippingId) {
@@ -218,7 +211,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.payment
      *
      * @return the value of mmall_order.payment
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public BigDecimal getPayment() {
@@ -230,7 +222,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.payment
      *
      * @param payment the value for mmall_order.payment
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setPayment(BigDecimal payment) {
@@ -242,7 +233,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.payment_type
      *
      * @return the value of mmall_order.payment_type
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Integer getPaymentType() {
@@ -254,7 +244,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.payment_type
      *
      * @param paymentType the value for mmall_order.payment_type
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setPaymentType(Integer paymentType) {
@@ -266,7 +255,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.postage
      *
      * @return the value of mmall_order.postage
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Integer getPostage() {
@@ -278,7 +266,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.postage
      *
      * @param postage the value for mmall_order.postage
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setPostage(Integer postage) {
@@ -290,7 +277,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.status
      *
      * @return the value of mmall_order.status
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Integer getStatus() {
@@ -302,7 +288,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.status
      *
      * @param status the value for mmall_order.status
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setStatus(Integer status) {
@@ -314,7 +299,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.payment_time
      *
      * @return the value of mmall_order.payment_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Date getPaymentTime() {
@@ -326,7 +310,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.payment_time
      *
      * @param paymentTime the value for mmall_order.payment_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setPaymentTime(Date paymentTime) {
@@ -338,7 +321,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.send_time
      *
      * @return the value of mmall_order.send_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Date getSendTime() {
@@ -350,7 +332,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.send_time
      *
      * @param sendTime the value for mmall_order.send_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setSendTime(Date sendTime) {
@@ -362,7 +343,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.end_time
      *
      * @return the value of mmall_order.end_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Date getEndTime() {
@@ -374,7 +354,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.end_time
      *
      * @param endTime the value for mmall_order.end_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setEndTime(Date endTime) {
@@ -386,7 +365,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.close_time
      *
      * @return the value of mmall_order.close_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Date getCloseTime() {
@@ -398,7 +376,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.close_time
      *
      * @param closeTime the value for mmall_order.close_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setCloseTime(Date closeTime) {
@@ -410,7 +387,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.create_time
      *
      * @return the value of mmall_order.create_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Date getCreateTime() {
@@ -422,7 +398,6 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.create_time
      *
      * @param createTime the value for mmall_order.create_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setCreateTime(Date createTime) {
@@ -434,7 +409,6 @@ public class Order implements Serializable {
      * This method returns the value of the database column mmall_order.update_time
      *
      * @return the value of mmall_order.update_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public Date getUpdateTime() {
@@ -446,10 +420,15 @@ public class Order implements Serializable {
      * This method sets the value of the database column mmall_order.update_time
      *
      * @param updateTime the value for mmall_order.update_time
-     *
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public Order newOrder(Consumer<Order> orderConsumer) {
+        Order order = new Order();
+        orderConsumer.accept(order);
+        return order;
     }
 }
