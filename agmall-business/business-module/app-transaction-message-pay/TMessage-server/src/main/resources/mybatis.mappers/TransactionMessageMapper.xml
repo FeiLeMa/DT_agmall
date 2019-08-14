@@ -89,11 +89,10 @@
         <if test="messageId != null and messageId != ''">and message_id = #{messageId,jdbcType=VARCHAR}</if>
         <if test="status != null and status != ''">and status = #{status,jdbcType=INTEGER}</if>
         <if test="areadlyDead != null and areadlyDead != ''">and areadly_dead = #{areadlyDead,jdbcType=INTEGER}</if>
-        <if test="consumerQueue != null and consumerQueue != ''">and consumer_queue =
-            #{consumerQueue,jdbcType=VARCHAR}
+        <if test="consumerQueue != null and consumerQueue != ''">and consumer_queue = #{consumerQueue,jdbcType=VARCHAR}
         </if>
-        <if test="createTimeBefore != null and createTimeBefore != ''">
-            <![CDATA[ and create_time < #{createTimeBefore,jdbcType=TIMESTAMP}]]></if>
+        <if test="createTimeBefore != null">
+             and create_time &lt; #{createTimeBefore}</if>
     </sql>
     <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String">
         <!--

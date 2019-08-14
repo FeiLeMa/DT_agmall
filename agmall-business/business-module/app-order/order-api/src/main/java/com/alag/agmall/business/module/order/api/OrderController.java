@@ -58,4 +58,6 @@ public interface OrderController {
     @PostMapping("add_pay_info")
     ServerResponse<Integer> addPayInfo(@RequestBody PayInfo payInfo);
 
+    @GetMapping("get_pay_info")
+    ServerResponse<PayInfo> getPayInfo(@RequestParam("orderNo") Long orderNo);
 }

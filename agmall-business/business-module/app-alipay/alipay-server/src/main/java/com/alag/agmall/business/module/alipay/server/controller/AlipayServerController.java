@@ -5,6 +5,7 @@ import com.alag.agmall.business.core.common.Const;
 import com.alag.agmall.business.core.common.ResponseCode;
 import com.alag.agmall.business.core.common.ServerResponse;
 import com.alag.agmall.business.core.util.PropertiesUtil;
+import com.alag.agmall.business.module.alipay.api.model.AlipayInfo;
 import com.alag.agmall.business.module.alipay.server.service.AlipayService;
 import com.alag.agmall.business.module.user.api.model.User;
 import com.alipay.api.AlipayApiException;
@@ -14,10 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -27,7 +25,7 @@ import java.util.Map;
 @Slf4j
 @Controller
 @RequestMapping("alipay")
-public class AlipayController {
+public class AlipayServerController {
     @Autowired
     private AlipayService alipayService;
 
@@ -78,7 +76,7 @@ public class AlipayController {
         boolean signVerified = AlipaySignature.rsaCheckV2(params, PropertiesUtil.getProperty("alipay.alipay_public_key"), PropertiesUtil.getProperty("alipay.charset"), PropertiesUtil.getProperty("alipay.sign_type")); //调用SDK验证签名
         if (signVerified) {
             log.info("验签成功,正在处理业务...");
-            ServerResponse response = alipayService.aliCallback(params);
+            ServerResponse response = alipayService.aNotifyBack(params);
             if (response.isSuccess()) {
                 log.info("业务处理成功，返回支付宝成功");
                 return Const.AlipayCallback.RESPONSE_SUCCESS;
@@ -97,35 +95,14 @@ public class AlipayController {
     @RequestMapping("ali_notify_back")
     @ResponseBody
     public ServerResponse alipayBack(@RequestBody Map<String,String> paramMap) {
-        return alipayService.aliCallback(paramMap);
+        return alipayService.aNotifyBack(paramMap);
+    }
+    //为TMessage提供查询接口
+    @GetMapping("query_alipay_info")
+    @ResponseBody
+    ServerResponse<AlipayInfo> getByOrderNo(@RequestParam("orderNo") Long orderNo) {
+        return alipayService.selectByOrderNo(orderNo);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    @RequestMapping("th")
-//    public String index(Model model) {
-//        model.addAttribute("msg", "okay");
-//        return "index";
-//    }
-//
-//
-//    @RequestMapping("index")
-//    @ResponseBody
-//    public String index() {
-//        return "return msg";
-//    }
 
 }

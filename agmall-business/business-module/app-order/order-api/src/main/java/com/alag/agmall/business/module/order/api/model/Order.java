@@ -431,4 +431,10 @@ public class Order implements Serializable {
         orderConsumer.accept(order);
         return order;
     }
+
+    public static Order setReturn(Consumer<Order> consumer) {
+        Order order = new Order();
+        consumer.accept(order);
+        return order;
+    }
 }

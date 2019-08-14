@@ -150,6 +150,12 @@ public class Const {
 
     public interface TMessage {
         /**
+         * messageId 前缀
+         */
+        String ORDER_MSG_ID_PRE = "Order";
+        String PAYINFO_MSG_ID_PRE = "PayInfo";
+
+        /**
          * remark
          */
         String REMARK = "测试版";
@@ -187,7 +193,8 @@ public class Const {
         /**
          * 消息队列名称
          */
-        String CONSUMER_QUEUE_NAME = "ACCOUNTING_NOTIFY";
+        String ORDER_QUEUE_NAME = "ORDER_NOTIFY";
+        String PAYINFO_QUEUE_NAME = "PAYINFO_NOTIFY";
 
         /**
          * 创建者
@@ -197,6 +204,21 @@ public class Const {
          * 修改者
          */
         String EDITOR_NAME = "alag";
+
+        /**
+         * 消息超时时间s
+         */
+        int MESSAGE_HANDLE_DURATION = 60;
+
+        /**
+         * 重发超时时间间隔s
+         */
+        int FIRST_SEND_TIMES = 0;
+        int SECOND_SEND_TIMES = 1;
+        int THIRD_SEND_TIMES = 2;
+        int FOURTH_SEND_TIMES = 5;
+        int FIFTH_SEND_TIMES = 15;
+
     }
 
     public enum MessageEnum {

@@ -12,13 +12,22 @@
     <artifactId>TMessage-server</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.alag.agmall.business</groupId>
+            <artifactId>alipay-feign</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 <!--        pageHelper-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.2.5</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.alag.agmall.business</groupId>
+            <artifactId>order-feign</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <dependency>
             <groupId>com.alag.agmall.business</groupId>
             <artifactId>TMessage-api</artifactId>

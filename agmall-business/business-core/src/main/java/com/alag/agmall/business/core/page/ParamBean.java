@@ -4,6 +4,7 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.function.Consumer;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,4 +20,12 @@ public class ParamBean implements Serializable {
 
     private Integer pageNum;
     private Integer pageSize;
+
+    public static ParamBean newParamBean() {
+        return new ParamBean();
+    }
+
+    public void set(Consumer<ParamBean> paramBeanConsumer) {
+        paramBeanConsumer.accept(this);
+    }
 }

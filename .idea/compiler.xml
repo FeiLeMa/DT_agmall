@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TMessage-feign" />
+        <module name="alipay-api" />
         <module name="shipping-feign" />
         <module name="shipping-api" />
         <module name="order-feign" />
@@ -33,6 +34,7 @@
         <module name="user-feignclient" />
         <module name="category-api" />
         <module name="TMessage-api" />
+        <module name="alipay-feign" />
         <module name="productback-server" />
         <module name="category-server" />
         <module name="cart-feign" />
@@ -42,6 +44,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="agmall-business" target="1.8" />
+      <module name="alipay-api" target="1.8" />
+      <module name="alipay-feign" target="1.8" />
       <module name="alipay-server" target="1.8" />
       <module name="all-api" target="1.8" />
       <module name="app-alipay" target="1.8" />
@@ -103,6 +107,8 @@
       <module name="TMessage-api" options="-parameters" />
       <module name="TMessage-feign" options="-parameters" />
       <module name="TMessage-server" options="-parameters" />
+      <module name="alipay-api" options="-parameters" />
+      <module name="alipay-feign" options="-parameters" />
       <module name="alipay-server" options="-parameters" />
       <module name="all-api" options="-parameters" />
       <module name="app-dt-pay-manager" options="-parameters" />

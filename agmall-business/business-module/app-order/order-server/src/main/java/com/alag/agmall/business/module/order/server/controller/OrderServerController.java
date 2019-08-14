@@ -119,4 +119,8 @@ public class OrderServerController {
         return orderService.insertPayInfo(payInfo);
     }
 
+    @GetMapping("get_pay_info")
+    ServerResponse<PayInfo> getPayInfo(@RequestParam("orderNo") Long orderNo) {
+        return orderService.selectPayInfoByOrderNo(orderNo);
+    }
 }

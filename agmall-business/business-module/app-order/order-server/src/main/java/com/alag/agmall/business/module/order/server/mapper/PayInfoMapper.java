@@ -52,4 +52,6 @@ public interface PayInfoMapper {
      * @mbggenerated Mon Jul 01 16:02:53 CST 2019
      */
     int updateByPrimaryKey(PayInfo record);
+
+    PayInfo selectPayInfoByOrderNo(Long orderNo);
 }

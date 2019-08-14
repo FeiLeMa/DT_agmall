@@ -4,13 +4,18 @@ import com.alag.agmall.business.core.common.Const;
 import com.alag.agmall.business.core.common.ServerResponse;
 import com.alag.agmall.business.core.util.BigDecimalUtil;
 import com.alag.agmall.business.core.util.DateTimeUtil;
+import com.alag.agmall.business.core.util.IDGenerator;
 import com.alag.agmall.business.core.util.PropertiesUtil;
 import com.alag.agmall.business.core.vo.OrderItemVo;
 import com.alag.agmall.business.core.vo.OrderProductVo;
 import com.alag.agmall.business.core.vo.OrderVo;
 import com.alag.agmall.business.core.vo.ShippingVo;
+import com.alag.agmall.business.module.alipay.api.model.AlipayInfo;
+import com.alag.agmall.business.module.alipay.feign.AlipayFeign;
 import com.alag.agmall.business.module.cart.api.model.Cart;
 import com.alag.agmall.business.module.cart.feign.controller.CartFeignClient;
+import com.alag.agmall.business.module.message.api.model.TransactionMessage;
+import com.alag.agmall.business.module.message.feign.controller.TransactionMessageFeign;
 import com.alag.agmall.business.module.order.api.model.Order;
 import com.alag.agmall.business.module.order.api.model.OrderItem;
 import com.alag.agmall.business.module.order.api.model.PayInfo;
@@ -22,6 +27,7 @@ import com.alag.agmall.business.module.product.api.model.Product;
 import com.alag.agmall.business.module.product.feign.controller.ProductFeignClient;
 import com.alag.agmall.business.module.shipping.api.model.Shipping;
 import com.alag.agmall.business.module.shipping.feign.controller.ShippingFeignClient;
+import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.google.common.collect.Lists;
@@ -49,6 +55,10 @@ public class OrderServiceImpl implements OrderService {
     private ShippingFeignClient shippingFeignClient;
     @Autowired
     private PayInfoMapper payInfoMapper;
+    @Autowired
+    private TransactionMessageFeign transactionMessageFeign;
+    @Autowired
+    private AlipayFeign alipayFeign;
 
     @Override
     public ServerResponse<Order> selectOrderByOrderNoAndUserId(Long orderNo, Integer userId) {
@@ -86,6 +96,68 @@ public class OrderServiceImpl implements OrderService {
         int row = payInfoMapper.insert(payInfo);
         return ServerResponse.createBySuccess(row);
     }
+
+    @Override
+    public ServerResponse<PayInfo> selectPayInfoByOrderNo(Long orderNo) {
+        PayInfo payInfo = payInfoMapper.selectPayInfoByOrderNo(orderNo);
+        return ServerResponse.createBySuccess(payInfo);
+    }
+
+    @Override
+    public ServerResponse modifyOrderStatusAndAddPayInfo(Long orderNo) {
+        Order order = orderMapper.selectByOrderNo(orderNo);
+        if (order.getStatus()==Const.OrderStatusEnum.PAID.getCode()) {
+            log.info(("幂等判断，订单状态已经修改，请忽略！"));
+            transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.ORDER_MSG_ID_PRE + orderNo);
+            return ServerResponse.createBySuccess("幂等判断，订单状态已经修改，请忽略！");
+        }
+        AlipayInfo alipayInfo = alipayFeign.getByOrderNo(orderNo).getData();
+        TransactionMessage message = TransactionMessage.setReturn(msg -> {
+            msg.setCreateTime(new Date());
+            msg.setUpdateTime(new Date());
+            msg.setConsumerQueue(Const.TMessage.PAYINFO_QUEUE_NAME);
+            msg.setCreator(Const.TMessage.CREATOR_NAME);
+            msg.setEditor(Const.TMessage.EDITOR_NAME);
+            msg.setId(IDGenerator.tMIDBuilder());
+            msg.setMessageId(Const.TMessage.PAYINFO_MSG_ID_PRE + orderNo);
+            msg.setMessageBody(JSONObject.toJSONString(alipayInfo));
+            msg.setVersion(1);
+            msg.setMessageDataType(Const.TMessage.MESSAGE_DATA_TYPE);
+            msg.setRemark(Const.TMessage.REMARK);
+        });
+        transactionMessageFeign.saveMessageWaitingConfirm(message);
+        order.setStatus(Const.OrderStatusEnum.PAID.getCode());
+        order.setUpdateTime(new Date());
+        int row = orderMapper.updateByPrimaryKeySelective(order);
+        String retMsg = "订单状态已经修改";
+        if (row > 0) {
+            transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.ORDER_MSG_ID_PRE + orderNo);
+            transactionMessageFeign.confirmAndSendMessage(Const.TMessage.PAYINFO_MSG_ID_PRE + orderNo);
+        } else {
+            retMsg = "修改订单状态失败";
+        }
+        return ServerResponse.createBySuccess(retMsg);
+    }
+
+    @Override
+    public ServerResponse addPayInfo(AlipayInfo alipayInfo) {
+        PayInfo payInfo = payInfoMapper.selectPayInfoByOrderNo(alipayInfo.getOrderNo());
+        if (payInfo != null) {
+            log.info("幂等判断，payinfo已经插入，请忽略");
+            transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.PAYINFO_MSG_ID_PRE + alipayInfo.getOrderNo());
+            return ServerResponse.createBySuccess("幂等判断，payinfo已经插入，请忽略");
+        }
+        payInfo = new PayInfo();
+        payInfo.setUserId(alipayInfo.getUserId());
+        payInfo.setOrderNo(alipayInfo.getOrderNo());
+        payInfo.setPayPlatform(Const.PayPlatformEnum.ALIPAY.getCode());
+        payInfo.setPlatformNumber(alipayInfo.getTradeNo());
+        payInfo.setPlatformStatus(alipayInfo.getTradeStatus());
+        payInfoMapper.insert(payInfo);
+        transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.PAYINFO_MSG_ID_PRE + alipayInfo.getOrderNo());
+        return ServerResponse.createBySuccess();
+    }
+
 
     @Override
     public ServerResponse createOrder(Integer userId, Integer shippingId) {

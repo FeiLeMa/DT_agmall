@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/TMessage-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/TMessage-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/TMessage-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/TMessage-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/agmall-business.iml" filepath="$PROJECT_DIR$/agmall-business/agmall-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-api/alipay-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-api/alipay-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-feign/alipay-feign.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-feign/alipay-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/alipay-server.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/alipay-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/all-api/all-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agmall-business/business-module/app-alipay/app-alipay.iml" filepath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/app-alipay.iml" />

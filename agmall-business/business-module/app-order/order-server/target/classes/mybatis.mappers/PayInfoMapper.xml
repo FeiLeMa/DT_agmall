@@ -36,6 +36,12 @@
     from mmall_pay_info
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectPayInfoByOrderNo" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from mmall_pay_info
+    where order_no = #{orderNo}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     <!--
       WARNING - @mbggenerated

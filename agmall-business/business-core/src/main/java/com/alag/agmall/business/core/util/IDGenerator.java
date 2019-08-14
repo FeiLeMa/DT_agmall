@@ -12,6 +12,10 @@ public class IDGenerator {
     public static String tMIDBuilder() {
         return UUID.randomUUID().toString().replaceAll("-","")+ "-" + System.currentTimeMillis();
     }
+
+    public static String alipayInfoIDBuilder() {
+        return IDGenerator.msgIDBuilder();
+    }
     public static void main(String[] args) {
 //        System.out.println(IDGenerator.msgIDBuilder());
         System.out.println(DateTimeUtil.dateToStr(new Date()));

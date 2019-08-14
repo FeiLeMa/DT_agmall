@@ -6,13 +6,15 @@ import com.alag.agmall.business.core.util.BigDecimalUtil;
 import com.alag.agmall.business.core.util.DateTimeUtil;
 import com.alag.agmall.business.core.util.IDGenerator;
 import com.alag.agmall.business.core.util.PropertiesUtil;
+import com.alag.agmall.business.module.alipay.api.model.AlipayInfo;
+import com.alag.agmall.business.module.alipay.server.mapper.AlipayInfoMapper;
 import com.alag.agmall.business.module.alipay.server.service.AlipayService;
 import com.alag.agmall.business.module.message.api.model.TransactionMessage;
 import com.alag.agmall.business.module.message.feign.controller.TransactionMessageFeign;
 import com.alag.agmall.business.module.order.api.model.Order;
 import com.alag.agmall.business.module.order.api.model.OrderItem;
-import com.alag.agmall.business.module.order.api.model.PayInfo;
 import com.alag.agmall.business.module.order.feign.controller.OrderFeignController;
+import com.alibaba.fastjson.JSONObject;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
@@ -33,6 +35,9 @@ public class AlipayServiceImpl implements AlipayService {
     private OrderFeignController orderFeign;
     @Autowired
     private TransactionMessageFeign tMessageFeign;
+    @Autowired
+    private AlipayInfoMapper alipayInfoMapper;
+
 
     @Override
     public ServerResponse<String> pay(Integer userId, Long orderNo) {
@@ -85,74 +90,56 @@ public class AlipayServiceImpl implements AlipayService {
         return ServerResponse.createBySuccess(form);
     }
 
+
+
     @Override
-    public ServerResponse aliCallback(Map<String, String> params) {
-        Long orderNo = Long.parseLong(params.get("out_trade_no"));
-        String tradeNo = params.get("trade_no");
-        String tradeStatus = params.get("trade_status");
-        Order order = orderFeign.queryOrderS(orderNo).getData();
+    public ServerResponse aNotifyBack(Map<String, String> params) {
+        final Long orderNo = Long.parseLong(params.get("out_trade_no"));
+        final String tradeNo = params.get("trade_no");
+        final String tradeStatus = params.get("trade_status");
+        final String gmtPayment = params.get("gmt_payment");
+        final Order order = orderFeign.queryOrderS(orderNo).getData();
         if (order == null) {
-            return ServerResponse.createByErrorMessage("agmmall的订单,回调忽略");
+            return ServerResponse.createByErrorMessage("订单不存在");
         }
-        if (order.getStatus() >= Const.OrderStatusEnum.PAID.getCode()) {
-            return ServerResponse.createBySuccess("支付宝重复调用");
-        }
-        String msgId1 = IDGenerator.msgIDBuilder();
-        if (Const.AlipayCallback.TRADE_STATUS_TRADE_SUCCESS.equals(tradeStatus)) {
 
-            order.setPaymentTime(DateTimeUtil.strToDate(params.get("gmt_payment")));
-            order.setStatus(Const.OrderStatusEnum.PAID.getCode());
-            TransactionMessage message = TransactionMessage.newTransactionMessage();
-            message.set(msg -> {
-                msg.setCreateTime(new Date());
-                msg.setUpdateTime(new Date());
-                msg.setConsumerQueue(Const.TMessage.CONSUMER_QUEUE_NAME);
-                msg.setCreator(Const.TMessage.CREATOR_NAME);
-                msg.setEditor(Const.TMessage.EDITOR_NAME);
-                msg.setId(IDGenerator.tMIDBuilder());
-                msg.setMessageId(msgId1);
-                msg.setMessageBody("添加支付时间，修改订单状态");
-                msg.setVersion(1);
-                msg.setMessageDataType(Const.TMessage.MESSAGE_DATA_TYPE);
-                msg.setRemark(Const.TMessage.REMARK);
-            });
-            ServerResponse response = tMessageFeign.saveMessageWaitingConfirm(message);
-            if (response.isSuccess()) {
-                tMessageFeign.confirmAndSendMessage(msgId1);
-            } else {
-                return ServerResponse.createByErrorMessage("预发送消息失败");
-            }
-//            orderFeign.modifyOrder(order);
-            String msgId2 = IDGenerator.msgIDBuilder();
-            PayInfo payInfo = new PayInfo();
-            payInfo.setUserId(order.getUserId());
-            payInfo.setOrderNo(order.getOrderNo());
-            payInfo.setPayPlatform(Const.PayPlatformEnum.ALIPAY.getCode());
-            payInfo.setPlatformNumber(tradeNo);
-            payInfo.setPlatformStatus(tradeStatus);
-
-            tMessageFeign.saveMessageWaitingConfirm(TransactionMessage.newTransactionMessage(msg -> {
-                msg.setId(IDGenerator.tMIDBuilder());
-                msg.setMessageId(msgId2);
-                msg.setMessageBody("添加支信息");
-                msg.setCreateTime(new Date());
-                msg.setUpdateTime(new Date());
-                msg.setConsumerQueue(Const.TMessage.CONSUMER_QUEUE_NAME);
-                msg.setCreator(Const.TMessage.CREATOR_NAME);
-                msg.setEditor(Const.TMessage.EDITOR_NAME);
-                msg.setVersion(1);
-                msg.setMessageDataType(Const.TMessage.MESSAGE_DATA_TYPE);
-                msg.setRemark(Const.TMessage.REMARK);
-            }));
-//        orderFeign.addPayInfo(payInfo);
-            if (response.isSuccess()) {
-                tMessageFeign.confirmAndSendMessage(msgId2);
-            } else {
-                return ServerResponse.createByErrorMessage("预发送消息失败");
-            }
-        } else {
-            return ServerResponse.createByErrorMessage("交易未成功");
+        if (!Const.AlipayCallback.TRADE_STATUS_TRADE_SUCCESS.equals(tradeStatus)) {
+            return ServerResponse.createByErrorMessage("交易失败,不执行任何操作");
         }
-        return ServerResponse.createBySuccess("预发送消息，确认消息成功！");
+        TransactionMessage message = TransactionMessage.newTransactionMessage();
+        message.set(msg -> {
+            msg.setCreateTime(new Date());
+            msg.setUpdateTime(new Date());
+            msg.setConsumerQueue(Const.TMessage.ORDER_QUEUE_NAME);
+            msg.setCreator(Const.TMessage.CREATOR_NAME);
+            msg.setEditor(Const.TMessage.EDITOR_NAME);
+            msg.setId(IDGenerator.tMIDBuilder());
+            msg.setMessageId(Const.TMessage.ORDER_MSG_ID_PRE+orderNo);
+            msg.setMessageBody(JSONObject.toJSONString(orderNo));
+            msg.setVersion(1);
+            msg.setMessageDataType(Const.TMessage.MESSAGE_DATA_TYPE);
+            msg.setRemark(Const.TMessage.REMARK);
+        });
+
+        tMessageFeign.saveMessageWaitingConfirm(message);
+        AlipayInfo alipayInfo = AlipayInfo.setReturn((aliPay)->{
+            aliPay.setId(IDGenerator.alipayInfoIDBuilder());
+            aliPay.setGmtPayment(DateTimeUtil.strToDate(gmtPayment));
+            aliPay.setOrderNo(orderNo);
+            aliPay.setTradeNo(tradeNo);
+            aliPay.setUserId(order.getUserId());
+            aliPay.setTradeStatus(tradeStatus);
+        });
+        alipayInfoMapper.insert(alipayInfo);
+//        int a = 3 / 0;
+        tMessageFeign.confirmAndSendMessage(Const.TMessage.ORDER_MSG_ID_PRE+orderNo);
+        return ServerResponse.createBySuccess("alipayNotify执行完毕");
+    }
+
+
+    @Override
+    public ServerResponse<AlipayInfo> selectByOrderNo(Long orderNo) {
+        AlipayInfo alipayInfo = alipayInfoMapper.selectByOrderNo(orderNo);
+        return ServerResponse.createBySuccess(alipayInfo);
     }
 }

@@ -556,11 +556,6 @@ public class TransactionMessage implements Serializable {
         messageSendTimes++;
     }
 
-    public static TransactionMessage newTransactionMessage(Consumer<TransactionMessage> consumer) {
-        TransactionMessage message = new TransactionMessage();
-        consumer.accept(message);
-        return message;
-    }
 
     public static TransactionMessage newTransactionMessage() {
         return new TransactionMessage();
@@ -568,6 +563,12 @@ public class TransactionMessage implements Serializable {
 
     public void set(Consumer<TransactionMessage> consumer) {
         consumer.accept(this);
+    }
+
+    public static TransactionMessage setReturn(Consumer<TransactionMessage> consumer) {
+        TransactionMessage transactionMessage = new TransactionMessage();
+        consumer.accept(transactionMessage);
+        return transactionMessage;
     }
 
 }

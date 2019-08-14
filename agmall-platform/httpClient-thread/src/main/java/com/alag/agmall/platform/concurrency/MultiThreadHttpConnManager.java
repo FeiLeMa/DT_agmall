@@ -29,6 +29,8 @@ import java.util.Random;
  */
 public class MultiThreadHttpConnManager {
     public static void main(String[] args) throws Exception {
+        final String cookieKey = "SESSION";
+        final String cookieValue = "YWVhMmJjOTUtYTRlYy00NDE4LWJkY2EtNTczY2FmZGI0ZGYz";
         File file = new File("/Users/alag/Desktop/file/orderIDFile");
         final long min = 100000000000000000L;
         final long max = 999999999999999999L;
@@ -48,7 +50,7 @@ public class MultiThreadHttpConnManager {
                 .setDefaultCookieStore(cookieStore)
                 .build();
 //        配置cookie
-        BasicClientCookie cookie = new BasicClientCookie("SESSION", "ZWQ5ZWU1ZGYtZDE4Yi00NjZlLTgyY2ItZDY2MGNlY2NkNTMw");
+        BasicClientCookie cookie = new BasicClientCookie(cookieKey, cookieValue);
         cookie.setVersion(0);
         cookie.setDomain("localhost");   //设置范围
         cookie.setPath("/");

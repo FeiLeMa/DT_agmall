@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>alipay-server</module>
+        <module>alipay-api</module>
+        <module>alipay-feign</module>
     </modules>
 
 
