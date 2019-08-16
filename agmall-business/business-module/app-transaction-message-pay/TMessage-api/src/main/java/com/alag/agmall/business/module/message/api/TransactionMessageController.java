@@ -4,6 +4,7 @@ import com.alag.agmall.business.core.common.ServerResponse;
 import com.alag.agmall.business.core.page.ParamBean;
 import com.alag.agmall.business.module.message.api.model.TransactionMessage;
 import com.github.pagehelper.PageInfo;
+import com.netflix.hystrix.HystrixCommand;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -20,7 +21,7 @@ public interface TransactionMessageController {
      * 确认并发送消息.
      */
     @PostMapping("confirm_and_send_message")
-    void confirmAndSendMessage(@RequestParam("messageId") String messageId);
+    HystrixCommand<ServerResponse> confirmAndSendMessage(@RequestParam("messageId") String messageId);
 
     /**
      * 存储并发送消息.
@@ -69,7 +70,7 @@ public interface TransactionMessageController {
      * 根据消息ID删除消息
      */
     @DeleteMapping("del_message")
-    void deleteMessageByMessageId(@RequestParam("messageId") String messageId);
+    HystrixCommand<ServerResponse> deleteMessageByMessageId(@RequestParam("messageId") String messageId);
 
 
     /**

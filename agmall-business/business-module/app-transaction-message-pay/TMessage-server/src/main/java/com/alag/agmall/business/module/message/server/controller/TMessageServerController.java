@@ -30,8 +30,8 @@ public class TMessageServerController {
     }
 
     @PostMapping("confirm_and_send_message")
-    void confirmAndSendMessage(@RequestParam("messageId") String messageId) throws MessageBizException {
-        tMessageService.confirmAndSendMsg(messageId);
+    ServerResponse confirmAndSendMessage(@RequestParam("messageId") String messageId) throws MessageBizException {
+        return tMessageService.confirmAndSendMsg(messageId);
     }
 
     @PostMapping("save_and_send_message")
@@ -48,7 +48,6 @@ public class TMessageServerController {
     void directSendMessage(@RequestBody TransactionMessage message) {
         verify(message, false,"message","ConsumerQueue");
         tMessageService.directMsg(message);
-
     }
 
     @PostMapping("r_send_message")

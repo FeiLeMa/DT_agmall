@@ -30,7 +30,7 @@ import java.util.Random;
 public class MultiThreadHttpConnManager {
     public static void main(String[] args) throws Exception {
         final String cookieKey = "SESSION";
-        final String cookieValue = "YWVhMmJjOTUtYTRlYy00NDE4LWJkY2EtNTczY2FmZGI0ZGYz";
+        final String cookieValue = "MzgzZWM5OTAtNTU5ZS00MTIwLThjOGMtNmMxOGYyZGE4ZmNj";
         File file = new File("/Users/alag/Desktop/file/orderIDFile");
         final long min = 100000000000000000L;
         final long max = 999999999999999999L;
@@ -73,7 +73,7 @@ public class MultiThreadHttpConnManager {
         String uriToPost = "http://localhost:8080/alipay/ali_notify_back";
 
         //线程个数
-        int threadPool = 100;
+        int threadPool = 1;
 
 //        存放orderNo
         List<String> orderIds = Lists.newArrayList();

@@ -33,6 +33,8 @@
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-testasync" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign" charset="UTF-8" />
@@ -41,7 +43,6 @@
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-feignclient" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-user/user-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/agmall-platform/concurrency-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-platform/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-platform/eureka-server" charset="UTF-8" />
   </component>

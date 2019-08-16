@@ -75,8 +75,6 @@ public class MsgTaskServiceImpl implements MsgTaskService {
                 } else {
                     tMessageService.delMsgByMsgId(msgID);
                 }
-
-
             }
         });
     }

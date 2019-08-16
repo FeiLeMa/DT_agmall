@@ -34,6 +34,7 @@ import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -104,6 +105,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    @Transactional
     public ServerResponse modifyOrderStatusAndAddPayInfo(Long orderNo) {
         Order order = orderMapper.selectByOrderNo(orderNo);
         if (order.getStatus()==Const.OrderStatusEnum.PAID.getCode()) {
@@ -131,8 +133,8 @@ public class OrderServiceImpl implements OrderService {
         int row = orderMapper.updateByPrimaryKeySelective(order);
         String retMsg = "订单状态已经修改";
         if (row > 0) {
-            transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.ORDER_MSG_ID_PRE + orderNo);
-            transactionMessageFeign.confirmAndSendMessage(Const.TMessage.PAYINFO_MSG_ID_PRE + orderNo);
+            transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.ORDER_MSG_ID_PRE + orderNo).queue();
+            transactionMessageFeign.confirmAndSendMessage(Const.TMessage.PAYINFO_MSG_ID_PRE + orderNo).queue();
         } else {
             retMsg = "修改订单状态失败";
         }
@@ -140,6 +142,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    @Transactional
     public ServerResponse addPayInfo(AlipayInfo alipayInfo) {
         PayInfo payInfo = payInfoMapper.selectPayInfoByOrderNo(alipayInfo.getOrderNo());
         if (payInfo != null) {
@@ -154,7 +157,7 @@ public class OrderServiceImpl implements OrderService {
         payInfo.setPlatformNumber(alipayInfo.getTradeNo());
         payInfo.setPlatformStatus(alipayInfo.getTradeStatus());
         payInfoMapper.insert(payInfo);
-        transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.PAYINFO_MSG_ID_PRE + alipayInfo.getOrderNo());
+        transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.PAYINFO_MSG_ID_PRE + alipayInfo.getOrderNo()).queue();
         return ServerResponse.createBySuccess();
     }
 

@@ -6,11 +6,14 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.jms.annotation.EnableJms;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@SpringBootApplication(scanBasePackages = {"com.alag.agmall.business.core.config",
+@SpringBootApplication(scanBasePackages = {"com.alag.agmall.business.module.message.feign.fallback",
+        "com.alag.agmall.business.core.config",
         "com.alag.agmall.business.module.order.server"})
 @EnableRedisHttpSession
 @EnableEurekaClient
+@EnableTransactionManagement
 @EnableFeignClients(basePackages = {"com.alag.agmall.business.module.cart.feign",
         "com.alag.agmall.business.module.shipping.feign",
         "com.alag.agmall.business.module.product.feign",

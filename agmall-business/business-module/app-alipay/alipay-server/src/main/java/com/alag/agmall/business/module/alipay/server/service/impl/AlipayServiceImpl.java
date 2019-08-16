@@ -22,6 +22,7 @@ import com.alipay.api.request.AlipayTradePagePayRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -93,6 +94,7 @@ public class AlipayServiceImpl implements AlipayService {
 
 
     @Override
+    @Transactional
     public ServerResponse aNotifyBack(Map<String, String> params) {
         final Long orderNo = Long.parseLong(params.get("out_trade_no"));
         final String tradeNo = params.get("trade_no");
@@ -130,9 +132,11 @@ public class AlipayServiceImpl implements AlipayService {
             aliPay.setUserId(order.getUserId());
             aliPay.setTradeStatus(tradeStatus);
         });
-        alipayInfoMapper.insert(alipayInfo);
-//        int a = 3 / 0;
-        tMessageFeign.confirmAndSendMessage(Const.TMessage.ORDER_MSG_ID_PRE+orderNo);
+        int row = alipayInfoMapper.insert(alipayInfo);
+        if (row > 0) {
+            log.info("alipay_info 插入数据成功");
+            tMessageFeign.confirmAndSendMessage(Const.TMessage.ORDER_MSG_ID_PRE+orderNo).queue();
+        }
         return ServerResponse.createBySuccess("alipayNotify执行完毕");
     }
 

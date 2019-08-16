@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="Spring" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -18,6 +21,7 @@
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-message-web/pom.xml" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-pay/pom.xml" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-product/pom.xml" />
+        <option value="$PROJECT_DIR$/agmall-business/business-module/app-testasync/pom.xml" />
         <option value="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/pom.xml" />
       </set>
     </option>

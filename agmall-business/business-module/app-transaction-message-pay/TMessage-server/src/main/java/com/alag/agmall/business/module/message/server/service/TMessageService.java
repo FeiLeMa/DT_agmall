@@ -8,7 +8,7 @@ import com.github.pagehelper.PageInfo;
 public interface TMessageService {
     ServerResponse<Integer> saveMessage(TransactionMessage message);
 
-    void confirmAndSendMsg(String messageId);
+    ServerResponse confirmAndSendMsg(String messageId);
 
     ServerResponse<Integer> saveAndSendMsg(TransactionMessage message);
 

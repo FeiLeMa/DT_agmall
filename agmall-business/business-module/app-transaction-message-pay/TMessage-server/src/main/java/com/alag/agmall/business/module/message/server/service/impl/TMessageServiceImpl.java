@@ -33,7 +33,7 @@ public class TMessageServiceImpl implements TMessageService {
     }
 
     @Override
-    public void confirmAndSendMsg(String messageId) {
+    public ServerResponse confirmAndSendMsg(String messageId) {
         final TransactionMessage message = getMsgByMsgId(messageId).getData();
         if (message == null) {
             throw new MessageBizException(MessageBizException.SAVA_MESSAGE_IS_NULL, "根据消息id查找的消息为空");
@@ -44,6 +44,7 @@ public class TMessageServiceImpl implements TMessageService {
 
         jmsTemplate.setDefaultDestinationName(message.getConsumerQueue());
         jmsTemplate.send(session -> session.createTextMessage(message.getMessageBody()));
+        return ServerResponse.createBySuccess();
     }
 
     @Override
