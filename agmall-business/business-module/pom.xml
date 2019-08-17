@@ -23,6 +23,7 @@
         <module>app-order</module>
         <module>app-alipay</module>
         <module>app-transaction-message-pay</module>
+        <module>app-notify-pay</module>
     </modules>
 
     <dependencies>

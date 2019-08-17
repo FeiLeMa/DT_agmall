@@ -17,6 +17,7 @@
         <module name="cart-server" />
         <module name="mybatis-generate" />
         <module name="productback-feign" />
+        <module name="notify-server" />
         <module name="user-feign" />
         <module name="message-web" />
         <module name="all-api" />
@@ -26,18 +27,20 @@
         <module name="TMessage-server" />
         <module name="config-server" />
         <module name="order-server" />
+        <module name="notify-api" />
         <module name="category-feign" />
         <module name="order-api" />
         <module name="cart-api" />
         <module name="productback-api" />
-        <module name="cart-feign" />
+        <module name="notify-feign" />
         <module name="alipay-server" />
         <module name="user-feignclient" />
         <module name="category-api" />
         <module name="TMessage-api" />
-        <module name="category-server" />
-        <module name="productback-server" />
         <module name="alipay-feign" />
+        <module name="productback-server" />
+        <module name="category-server" />
+        <module name="cart-feign" />
         <module name="product-server" />
         <module name="business-core" />
       </profile>
@@ -53,6 +56,7 @@
       <module name="app-category" target="1.8" />
       <module name="app-dt-pay-manager" target="1.8" />
       <module name="app-message-web" target="1.8" />
+      <module name="app-notify-pay" target="1.8" />
       <module name="app-order" target="1.8" />
       <module name="app-pay" target="1.8" />
       <module name="app-product" target="1.8" />
@@ -80,6 +84,9 @@
       <module name="HttpClient-Thread" target="1.5" />
       <module name="message-web" target="1.8" />
       <module name="mybatis-generate" target="1.5" />
+      <module name="notify-api" target="1.8" />
+      <module name="notify-feign" target="1.8" />
+      <module name="notify-server" target="1.8" />
       <module name="order-api" target="1.8" />
       <module name="order-feign" target="1.8" />
       <module name="order-server" target="1.8" />
@@ -132,6 +139,9 @@
       <module name="dtpmanager-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="message-web" options="-parameters" />
+      <module name="notify-api" options="-parameters" />
+      <module name="notify-feign" options="-parameters" />
+      <module name="notify-server" options="-parameters" />
       <module name="order-api" options="-parameters" />
       <module name="order-feign" options="-parameters" />
       <module name="order-server" options="-parameters" />

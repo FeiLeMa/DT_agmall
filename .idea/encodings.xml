@@ -17,6 +17,11 @@
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/app-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign" charset="UTF-8" />
@@ -33,8 +38,6 @@
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-shipping/shipping-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-test" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-testasync" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign" charset="UTF-8" />

@@ -2,42 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fe24db6-7814-4cfd-be95-615add38df0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/src/main/java/com/alag/agmall/business/module/order/feign/fallback/OrderFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/src/main/java/com/alag/agmall/business/module/message/feign/fallback/MyFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/AlipayServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/AlipayServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/service/impl/AlipayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/service/impl/AlipayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/target/classes/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/target/classes/com/alag/agmall/business/module/alipay/server/AlipayServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/target/classes/com/alag/agmall/business/module/alipay/server/AlipayServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/target/classes/com/alag/agmall/business/module/alipay/server/service/impl/AlipayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/target/classes/com/alag/agmall/business/module/alipay/server/service/impl/AlipayServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/src/main/java/com/alag/agmall/business/module/order/feign/controller/OrderFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/src/main/java/com/alag/agmall/business/module/order/feign/controller/OrderFeignController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/target/classes/com/alag/agmall/business/module/order/feign/controller/OrderFeignController.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-feign/target/classes/com/alag/agmall/business/module/order/feign/controller/OrderFeignController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/OrderServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/OrderServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/OrderServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/OrderServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-order/order-server/target/classes/com/alag/agmall/business/module/order/server/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/page/NotifyPageParamBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-api/src/main/java/com/alag/agmall/business/module/notify/api/Const/IDGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-api/src/main/java/com/alag/agmall/business/module/notify/api/Const/NotifyConst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-api/src/main/java/com/alag/agmall/business/module/notify/api/NotifyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-api/src/main/java/com/alag/agmall/business/module/notify/api/model/NotifyRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-api/src/main/java/com/alag/agmall/business/module/notify/api/model/NotifyRecordLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-feign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/java/com/alag/agmall/business/module/notify/server/NotifyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/java/com/alag/agmall/business/module/notify/server/config/DruidConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/java/com/alag/agmall/business/module/notify/server/controller/NotifyServerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/java/com/alag/agmall/business/module/notify/server/mapper/NotifyRecordLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/java/com/alag/agmall/business/module/notify/server/mapper/NotifyRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/java/com/alag/agmall/business/module/notify/server/service/NotifyRecordLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/java/com/alag/agmall/business/module/notify/server/service/NotifyRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/java/com/alag/agmall/business/module/notify/server/service/impl/NotifyRecordLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/java/com/alag/agmall/business/module/notify/server/service/impl/NotifyRecordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/resources/mybatis.mappers/NotifyRecordLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/resources/mybatis.mappers/NotifyRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/common/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core/common/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agmall-business/business-core/target/classes/com/alag/agmall/business/core/common/Const$OrderStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-core/target/classes/com/alag/agmall/business/core/common/Const$OrderStatusEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/TransactionMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/TransactionMessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/target/classes/com/alag/agmall/business/module/message/api/TransactionMessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-api/target/classes/com/alag/agmall/business/module/message/api/TransactionMessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/src/main/java/com/alag/agmall/business/module/message/feign/controller/TransactionMessageFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/src/main/java/com/alag/agmall/business/module/message/feign/controller/TransactionMessageFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/target/classes/com/alag/agmall/business/module/message/feign/controller/TransactionMessageFeign.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/target/classes/com/alag/agmall/business/module/message/feign/controller/TransactionMessageFeign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/controller/TMessageServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/controller/TMessageServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/service/TMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/service/TMessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/service/impl/MsgTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/service/impl/MsgTaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/service/impl/TMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/java/com/alag/agmall/business/module/message/server/service/impl/TMessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/target/classes/com/alag/agmall/business/module/message/server/controller/TMessageServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/target/classes/com/alag/agmall/business/module/message/server/controller/TMessageServerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/target/classes/com/alag/agmall/business/module/message/server/service/TMessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/target/classes/com/alag/agmall/business/module/message/server/service/TMessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/target/classes/com/alag/agmall/business/module/message/server/service/impl/MsgTaskServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/target/classes/com/alag/agmall/business/module/message/server/service/impl/MsgTaskServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/target/classes/com/alag/agmall/business/module/message/server/service/impl/TMessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/target/classes/com/alag/agmall/business/module/message/server/service/impl/TMessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-alipay-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-alipay-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-message-dev" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-order-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-platform/config-server/src/main/resources/config/app-order-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-platform/httpClient-thread/src/main/java/com/alag/agmall/platform/concurrency/MultiThreadHttpConnManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-platform/httpClient-thread/src/main/java/com/alag/agmall/platform/concurrency/MultiThreadHttpConnManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agmall-platform/httpClient-thread/target/classes/com/alag/agmall/platform/concurrency/MultiThreadHttpConnManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-platform/httpClient-thread/target/classes/com/alag/agmall/platform/concurrency/MultiThreadHttpConnManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/resources/mybatis.mappers/TransactionMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/resources/mybatis.mappers/TransactionMessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agmall-business/business-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-business/business-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agmall-platform/mybatis-generate/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agmall-platform/mybatis-generate/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +61,7 @@
     <favorites_list name="DT_agmall" />
     <favorites_list name="common">
       <favorite_root url="com.alag.agmall.business.core.common.Const" module="business-core" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
+      <favorite_root url="com.alag.agmall.business.module.notify.api.Const.NotifyConst" module="notify-api" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
     </favorites_list>
     <favorites_list name="app">
       <favorite_root url="com.alag.agmall.business.module.message.server.TransactionMessageServer" module="TMessage-server" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
@@ -90,72 +83,11 @@
       <list>
         <option value="package-info" />
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>HttpServletRequest request</find>
-      <find>com.alag.mmall.model.PayInfo</find>
-      <find>com.alag.mmall.model.Order</find>
-      <find>com.alag.mmall.model.OrderItem</find>
-      <find>selectAllCartByUserId</find>
-      <find>select</find>
-      <find>closeOrder</find>
-      <find>@ResponseBody</find>
-      <find>orderService</find>
-      <find>throws MessageBizException</find>
-      <find>RpTransactionMessage</find>
-      <find>public</find>
-      <find>(RpTransactionMessage rpTransactionMessage);</find>
-      <find>getMessageByMessageId</find>
-      <find>TransactionMessage message = getMsgByMsgId(messageId)</find>
-      <find>insert</find>
-      <find>insertSelective</find>
-      <find>inse</find>
-      <find>tradeNo</find>
-      <find>tradeStatus</find>
-      <find>httpPost</find>
-      <find>message.</find>
-      <find>saveMessageWaitingConfirm</find>
-      <find>list</find>
-      <find>.</find>
-      <find>user</find>
-      <find>order</find>
-      <find>getByOrderNo</find>
-      <find>feign</find>
-      <find>queue</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>com.alag.agmall.business.module.user.api.User</replace>
-      <replace>);</replace>
-      <replace>parameterType=&quot;com.alag.agmall.business.module.user.api.model.User&quot;</replace>
-      <replace>log.</replace>
-      <replace>com.alag.agmall.business.module.category.api.model.Category</replace>
-      <replace>com.alag.agmall.business.module.product.api.model.Product</replace>
-      <replace>productFeignClient</replace>
-      <replace>com.alag.agmall.business.module.shipping.api.model.Shipping</replace>
-      <replace>agmall-business/business-module/app-cart/cart-api/src/main/java/com/alag/agmall/business/module/cart/api/model/Cart.java</replace>
-      <replace>com.alag.agmall.business.module.cart.api.model.Cart</replace>
-      <replace>com.alag.agmall.business.module.order.api.model.PayInfo</replace>
-      <replace>com.alag.agmall.business.module.order.api.model.Order</replace>
-      <replace>com.alag.agmall.business.module.order.api.model.OrderItem</replace>
-      <replace>orderFeign</replace>
-      <replace>payService</replace>
-      <replace>@RequestBody TransactionMessage</replace>
-      <replace>(@RequestBody TransactionMessage transactionMessage);</replace>
-      <replace>getMsgByMsgId</replace>
-      <replace>TransactionMessage message = getMsgByMsgId(messageId).getData()</replace>
-      <replace>insertSelective</replace>
-      <replace>msg.</replace>
-      <replace>_</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/agmall-business/business-module/app-user/user-server/src/main/java</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -182,37 +114,38 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3229885" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/mybatis.mappers" />
-      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/resources/mybatis.mappers" />
-      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/test/java" />
-      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/src/main/resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.alag.agmall.business.module.pay.server.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/resources" />
       <recent name="$PROJECT_DIR$/agmall-business/business-module/app-test/src/main/resources" />
       <recent name="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/src/main/resources" />
       <recent name="$PROJECT_DIR$/agmall-business/business-module/app-message-web/message-web/src/main/resources" />
       <recent name="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-feign/src/main/java/com/alag/agmall/business/module/message/feign" />
-      <recent name="$PROJECT_DIR$/agmall-business/business-core/src/main/java/com/alag/agmall/business/core" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.alag.agmall.business.module.notify.server.config" />
+      <recent name="com.alag.agmall.business.module.notify.server" />
       <recent name="com.alag.agmall.business.module.testasync.server" />
       <recent name="com.alag.agmall.business.module.test.server" />
       <recent name="com.alag.agmall.business.module.alipay.server.config" />
-      <recent name="com.alag.agmall.platform.concurrency" />
-      <recent name="com.alag.agmall.platform.concurrency.util" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.alag.agmall.business.module.pay.server.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server/src/main/resources/mybatis.mappers" />
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-alipay/alipay-server/src/main/resources/mybatis.mappers" />
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/main/resources/mybatis.mappers" />
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-transaction-message-pay/TMessage-server/src/test/java" />
+      <recent name="$PROJECT_DIR$/agmall-business/business-module/app-user/user-feign/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -233,7 +166,7 @@
     </option>
     <option name="contentProportion" value="0.22892562" />
   </component>
-  <component name="RunManager" selected="Application.MultiThreadHttpConnManager">
+  <component name="RunManager" selected="Spring Boot.NotifyServer">
     <configuration name="MultiThreadHttpConnManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.alag.agmall.platform.concurrency.MultiThreadHttpConnManager" />
       <module name="HttpClient-Thread" />
@@ -267,6 +200,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotifyServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="notify-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alag.agmall.business.module.notify.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alag.agmall.business.module.notify.server.NotifyServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="order-server" />
       <extension name="coverage">
@@ -293,34 +239,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="user-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.alag.agmall.business.module.user.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alag.agmall.business.module.user.server.UserServer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.MultiThreadHttpConnManager" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.TransactionMessageServer" />
-      <item itemvalue="Spring Boot.UserServer" />
       <item itemvalue="Spring Boot.OrderServer" />
       <item itemvalue="Spring Boot.AlipayServer" />
+      <item itemvalue="Spring Boot.NotifyServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.NotifyServer" />
         <item itemvalue="Application.MultiThreadHttpConnManager" />
         <item itemvalue="Spring Boot.AlipayServer" />
         <item itemvalue="Spring Boot.TransactionMessageServer" />
         <item itemvalue="Spring Boot.OrderServer" />
-        <item itemvalue="Spring Boot.UserServer" />
       </list>
     </recent_temporary>
   </component>
@@ -332,7 +265,7 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ContributorNode@18169199" type="d2cb1801:ServiceModel$ContributorNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ContributorNode@7d3370fc" type="d2cb1801:ServiceModel$ContributorNode" />
             </path>
           </expand>
           <select />
@@ -399,7 +332,9 @@
       <workItem from="1565848312650" duration="308000" />
       <workItem from="1565848775708" duration="368000" />
       <workItem from="1565850288338" duration="377000" />
-      <workItem from="1565850869017" duration="9300000" />
+      <workItem from="1565850869017" duration="10365000" />
+      <workItem from="1565938604043" duration="121000" />
+      <workItem from="1565939232506" duration="21482000" />
     </task>
     <servers />
   </component>
