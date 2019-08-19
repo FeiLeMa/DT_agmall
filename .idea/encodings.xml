@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/agmall-business" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module" charset="UTF-8" />
@@ -17,10 +17,12 @@
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-category/category-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-maxnotify" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-maxnotify/maxnotify-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/app-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-feignclient" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-notify-pay/notify-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agmall-business/business-module/app-order/order-api" charset="UTF-8" />

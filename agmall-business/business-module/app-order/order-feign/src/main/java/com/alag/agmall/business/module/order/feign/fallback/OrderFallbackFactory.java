@@ -1,6 +1,7 @@
 package com.alag.agmall.business.module.order.feign.fallback;
 
 import com.alag.agmall.business.core.common.ServerResponse;
+import com.alag.agmall.business.module.alipay.api.model.AlipayInfo;
 import com.alag.agmall.business.module.order.api.model.Order;
 import com.alag.agmall.business.module.order.api.model.OrderItem;
 import com.alag.agmall.business.module.order.api.model.PayInfo;
@@ -73,6 +74,11 @@ public class OrderFallbackFactory implements FallbackFactory<OrderFeignControlle
             @Override
             public ServerResponse<PayInfo> getPayInfo(Long orderNo) {
                 return ServerResponse.createByErrorMessage(throwable.getMessage());
+            }
+
+            @Override
+            public void addPayInfoByAPayInfo(AlipayInfo alipayInfo) {
+
             }
         };
     }

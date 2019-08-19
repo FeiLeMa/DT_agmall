@@ -15,7 +15,10 @@ public class Const {
     public interface ProductListOrderBy {
         Set<String> PRICE_ASC_DESC = Sets.newHashSet("price_desc", "price_asc");
     }
-
+    public interface Property{
+        String MERCHANT_URL = "merchant.returnUrl";
+        String MERCHANT_NO = "merchant_no";
+    }
     public interface REDIS_LOCK {
         String CLOSE_ORDER_TASK_LOCK = "CLOSE_ORDER_TASK_LOCK";//关闭订单的分布式锁
     }
@@ -195,7 +198,7 @@ public class Const {
          */
         String ORDER_QUEUE_NAME = "ORDER_NOTIFY";
         String PAYINFO_QUEUE_NAME = "PAYINFO_NOTIFY";
-
+        String MERCHANT_QUEUE_NAME = "MERCHANT_NOTIFY";
         /**
          * 创建者
          */

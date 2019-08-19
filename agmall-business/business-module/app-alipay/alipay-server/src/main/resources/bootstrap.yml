@@ -1,6 +1,13 @@
 spring:
   profiles:
     active: dev
+  activemq:
+    broker-url: tcp://47.240.11.229:61616
+    user: admin
+    password: admin
+    pool:
+      # 使用flase,此处改为true报错，不清楚什么原因
+      enabled: false
   cloud:
     config:
       profile: dev

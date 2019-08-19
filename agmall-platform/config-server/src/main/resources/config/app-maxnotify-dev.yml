@@ -1,0 +1,14 @@
+server:
+  port: 8098
+spring:
+  redis:
+    database: 0
+    host: 47.240.11.229
+    port: 6379
+    password: 123456
+    timeout: 2000ms
+    store-type: redis
+  application:
+    name: app-maxnotify
+  profiles:
+    active: dev

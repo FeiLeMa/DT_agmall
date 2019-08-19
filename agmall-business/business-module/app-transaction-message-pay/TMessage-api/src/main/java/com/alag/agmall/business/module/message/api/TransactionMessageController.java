@@ -35,7 +35,7 @@ public interface TransactionMessageController {
      * 透传到MQ
      */
     @PostMapping("direct_send_message")
-    void directSendMessage(@RequestBody TransactionMessage transactionMessage);
+    HystrixCommand<ServerResponse> directSendMessage(@RequestBody TransactionMessage transactionMessage);
 
 
     /**

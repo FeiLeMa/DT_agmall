@@ -24,6 +24,7 @@
         <module>app-alipay</module>
         <module>app-transaction-message-pay</module>
         <module>app-notify-pay</module>
+        <module>app-maxnotify</module>
     </modules>
 
     <dependencies>

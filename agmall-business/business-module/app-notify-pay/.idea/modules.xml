@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app-notify-pay.iml" filepath="$PROJECT_DIR$/app-notify-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notify-api/notify-api.iml" filepath="$PROJECT_DIR$/notify-api/notify-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notify-feign/notify-feign.iml" filepath="$PROJECT_DIR$/notify-feign/notify-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notify-server/notify-server.iml" filepath="$PROJECT_DIR$/notify-server/notify-server.iml" />
+    </modules>
+  </component>
+</project>

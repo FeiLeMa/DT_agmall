@@ -39,7 +39,13 @@ public class MyFallbackFactory implements FallbackFactory<TransactionMessageFeig
             }
 
             @Override
-            public void directSendMessage(TransactionMessage transactionMessage) {
+            public HystrixCommand<ServerResponse> directSendMessage(TransactionMessage transactionMessage) {
+                return new HystrixCommand<ServerResponse>(hystrixCommandGroupKey) {
+                    @Override
+                    protected ServerResponse run() throws Exception {
+                        return ServerResponse.createByErrorMessage(throwable.getMessage());
+                    }
+                };
             }
 
             @Override

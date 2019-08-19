@@ -6,43 +6,44 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TMessage-feign" />
         <module name="alipay-api" />
-        <module name="shipping-feign" />
-        <module name="shipping-api" />
-        <module name="order-feign" />
-        <module name="product-api" />
-        <module name="shipping-server" />
-        <module name="product-feign" />
-        <module name="cart-server" />
-        <module name="mybatis-generate" />
-        <module name="productback-feign" />
-        <module name="notify-server" />
-        <module name="user-feign" />
-        <module name="message-web" />
-        <module name="all-api" />
-        <module name="user-server" />
-        <module name="user-api" />
-        <module name="HttpClient-Thread" />
-        <module name="TMessage-server" />
-        <module name="config-server" />
-        <module name="order-server" />
-        <module name="notify-api" />
-        <module name="category-feign" />
-        <module name="order-api" />
-        <module name="cart-api" />
-        <module name="productback-api" />
-        <module name="notify-feign" />
-        <module name="alipay-server" />
-        <module name="user-feignclient" />
-        <module name="category-api" />
-        <module name="TMessage-api" />
         <module name="alipay-feign" />
-        <module name="productback-server" />
-        <module name="category-server" />
-        <module name="cart-feign" />
-        <module name="product-server" />
+        <module name="alipay-server" />
+        <module name="all-api" />
         <module name="business-core" />
+        <module name="cart-api" />
+        <module name="cart-feign" />
+        <module name="cart-server" />
+        <module name="category-api" />
+        <module name="category-feign" />
+        <module name="category-server" />
+        <module name="config-server" />
+        <module name="HttpClient-Thread" />
+        <module name="maxnotify-server" />
+        <module name="message-web" />
+        <module name="mybatis-generate" />
+        <module name="notify-api" />
+        <module name="notify-feignclient" />
+        <module name="notify-server" />
+        <module name="order-api" />
+        <module name="order-feign" />
+        <module name="order-server" />
+        <module name="product-api" />
+        <module name="product-feign" />
+        <module name="product-server" />
+        <module name="productback-api" />
+        <module name="productback-feign" />
+        <module name="productback-server" />
+        <module name="shipping-api" />
+        <module name="shipping-feign" />
+        <module name="shipping-server" />
+        <module name="TMessage-api" />
+        <module name="TMessage-feign" />
+        <module name="TMessage-server" />
+        <module name="user-api" />
+        <module name="user-feign" />
+        <module name="user-feignclient" />
+        <module name="user-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -55,6 +56,7 @@
       <module name="app-cart" target="1.8" />
       <module name="app-category" target="1.8" />
       <module name="app-dt-pay-manager" target="1.8" />
+      <module name="app-maxnotify" target="1.8" />
       <module name="app-message-web" target="1.8" />
       <module name="app-notify-pay" target="1.8" />
       <module name="app-order" target="1.8" />
@@ -82,10 +84,12 @@
       <module name="dtpmanager-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="HttpClient-Thread" target="1.5" />
+      <module name="maxnotify-server" target="1.8" />
       <module name="message-web" target="1.8" />
       <module name="mybatis-generate" target="1.5" />
       <module name="notify-api" target="1.8" />
       <module name="notify-feign" target="1.8" />
+      <module name="notify-feignclient" target="1.8" />
       <module name="notify-server" target="1.8" />
       <module name="order-api" target="1.8" />
       <module name="order-feign" target="1.8" />
@@ -121,6 +125,7 @@
       <module name="alipay-server" options="-parameters" />
       <module name="all-api" options="-parameters" />
       <module name="app-dt-pay-manager" options="-parameters" />
+      <module name="app-maxnotify" options="-parameters" />
       <module name="app-message-web" options="-parameters" />
       <module name="app-product" options="-parameters" />
       <module name="app-test" options="-parameters" />
@@ -138,9 +143,11 @@
       <module name="dtpmanager-feign" options="-parameters" />
       <module name="dtpmanager-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="maxnotify-server" options="-parameters" />
       <module name="message-web" options="-parameters" />
       <module name="notify-api" options="-parameters" />
       <module name="notify-feign" options="-parameters" />
+      <module name="notify-feignclient" options="-parameters" />
       <module name="notify-server" options="-parameters" />
       <module name="order-api" options="-parameters" />
       <module name="order-feign" options="-parameters" />

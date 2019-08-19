@@ -1,6 +1,5 @@
 package com.alag.agmall.business.module.order.server;
 
-import com.alag.agmall.business.module.alipay.api.model.AlipayInfo;
 import com.alag.agmall.business.module.order.server.service.OrderService;
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
@@ -15,14 +14,10 @@ public class OrderMQListener {
     private OrderService orderService;
 
 
-    @JmsListener(destination= "*")
+    @JmsListener(destination= "ORDER_NOTIFY")
     public void onMessage(String orderData) {
-        if (orderData.length() == 18) {
             Long orderNo = JSONObject.parseObject(orderData, Long.class);
             orderService.modifyOrderStatusAndAddPayInfo(orderNo);
-        } else {
-            AlipayInfo alipayInfo = JSONObject.parseObject(orderData, AlipayInfo.class);
-            orderService.addPayInfo(alipayInfo);
-        }
+
     }
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27e52fb1-4744-47e0-bddd-90aacb7f40f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../business-core/src/main/java/com/alag/agmall/business/core/common/Map2UrlString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/PayMQListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/Thread/MyTreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/function/MerchantNotityHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-maxnotify/maxnotify-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-maxnotify/maxnotify-server/src/main/java/com/alag/agmall/business/module/maxnotify/server/MaxNotifyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-maxnotify/maxnotify-server/src/main/java/com/alag/agmall/business/module/maxnotify/server/listener/NotifyMQListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-maxnotify/maxnotify-server/src/main/resources/bootstarp.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-maxnotify/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notify-feign/src/main/java/com/alag/agmall/business/module/notify/feign/controller/NotifyFeign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-core/src/main/java/com/alag/agmall/business/core/common/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-core/src/main/java/com/alag/agmall/business/core/common/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-core/src/main/resources/agmall.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-core/src/main/resources/agmall.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-alipay/alipay-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-alipay/alipay-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/service/impl/AlipayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-alipay/alipay-server/src/main/java/com/alag/agmall/business/module/alipay/server/service/impl/AlipayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-alipay/alipay-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-alipay/alipay-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notify-api/src/main/java/com/alag/agmall/business/module/notify/api/Const/NotifyConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/notify-api/src/main/java/com/alag/agmall/business/module/notify/api/Const/NotifyConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notify-api/target/classes/com/alag/agmall/business/module/notify/api/Const/NotifyConst$NotifyStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/notify-api/target/classes/com/alag/agmall/business/module/notify/api/Const/NotifyConst$NotifyStatusEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notify-api/target/classes/com/alag/agmall/business/module/notify/api/Const/NotifyConst$NotifyTypeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/notify-api/target/classes/com/alag/agmall/business/module/notify/api/Const/NotifyConst$NotifyTypeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notify-api/target/classes/com/alag/agmall/business/module/notify/api/Const/NotifyConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/notify-api/target/classes/com/alag/agmall/business/module/notify/api/Const/NotifyConst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notify-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notify-feign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-order/order-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-order/order-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-order/order-api/src/main/java/com/alag/agmall/business/module/order/api/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-order/order-api/src/main/java/com/alag/agmall/business/module/order/api/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-order/order-feign/src/main/java/com/alag/agmall/business/module/order/feign/fallback/OrderFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-order/order-feign/src/main/java/com/alag/agmall/business/module/order/feign/fallback/OrderFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/OrderMQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/OrderMQListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/controller/OrderServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-order/order-server/src/main/java/com/alag/agmall/business/module/order/server/controller/OrderServerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/TransactionMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/TransactionMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/model/TransactionMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-transaction-message-pay/TMessage-api/src/main/java/com/alag/agmall/business/module/message/api/model/TransactionMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-transaction-message-pay/TMessage-feign/src/main/java/com/alag/agmall/business/module/message/feign/fallback/MyFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-transaction-message-pay/TMessage-feign/src/main/java/com/alag/agmall/business/module/message/feign/fallback/MyFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1PcvC5BZ8bP0L3fBi05Ys7akHnM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27e52fb1-4744-47e0-bddd-90aacb7f40f5" name="Default Changelist" comment="" />
+      <created>1566186068694</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566186068694</updated>
+      <workItem from="1566186071708" duration="144000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

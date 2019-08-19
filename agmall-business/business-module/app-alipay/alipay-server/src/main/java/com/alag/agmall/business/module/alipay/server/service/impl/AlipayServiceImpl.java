@@ -7,6 +7,8 @@ import com.alag.agmall.business.core.util.DateTimeUtil;
 import com.alag.agmall.business.core.util.IDGenerator;
 import com.alag.agmall.business.core.util.PropertiesUtil;
 import com.alag.agmall.business.module.alipay.api.model.AlipayInfo;
+import com.alag.agmall.business.module.alipay.server.Thread.MyTreadPool;
+import com.alag.agmall.business.module.alipay.server.function.MerchantNotityHandler;
 import com.alag.agmall.business.module.alipay.server.mapper.AlipayInfoMapper;
 import com.alag.agmall.business.module.alipay.server.service.AlipayService;
 import com.alag.agmall.business.module.message.api.model.TransactionMessage;
@@ -92,7 +94,6 @@ public class AlipayServiceImpl implements AlipayService {
     }
 
 
-
     @Override
     @Transactional
     public ServerResponse aNotifyBack(Map<String, String> params) {
@@ -104,9 +105,14 @@ public class AlipayServiceImpl implements AlipayService {
         if (order == null) {
             return ServerResponse.createByErrorMessage("订单不存在");
         }
-
+        if (order.getStatus() == Const.OrderStatusEnum.PAID.getCode()) {
+            return ServerResponse.createByErrorMessage("订单已经支付，请勿重复支付");
+        }
         if (!Const.AlipayCallback.TRADE_STATUS_TRADE_SUCCESS.equals(tradeStatus)) {
-            return ServerResponse.createByErrorMessage("交易失败,不执行任何操作");
+            log.info("支付失败，发送商户通知");
+            MerchantNotityHandler merchantNotityHandler = new MerchantNotityHandler(params, orderFeign, tMessageFeign);
+            MyTreadPool.exector.submit(merchantNotityHandler);
+            return ServerResponse.createByErrorMessage("交易失败,仅发送商户通知");
         }
         TransactionMessage message = TransactionMessage.newTransactionMessage();
         message.set(msg -> {
@@ -116,7 +122,7 @@ public class AlipayServiceImpl implements AlipayService {
             msg.setCreator(Const.TMessage.CREATOR_NAME);
             msg.setEditor(Const.TMessage.EDITOR_NAME);
             msg.setId(IDGenerator.tMIDBuilder());
-            msg.setMessageId(Const.TMessage.ORDER_MSG_ID_PRE+orderNo);
+            msg.setMessageId(Const.TMessage.ORDER_MSG_ID_PRE + orderNo);
             msg.setMessageBody(JSONObject.toJSONString(orderNo));
             msg.setVersion(1);
             msg.setMessageDataType(Const.TMessage.MESSAGE_DATA_TYPE);
@@ -124,7 +130,7 @@ public class AlipayServiceImpl implements AlipayService {
         });
 
         tMessageFeign.saveMessageWaitingConfirm(message);
-        AlipayInfo alipayInfo = AlipayInfo.setReturn((aliPay)->{
+        AlipayInfo alipayInfo = AlipayInfo.setReturn((aliPay) -> {
             aliPay.setId(IDGenerator.alipayInfoIDBuilder());
             aliPay.setGmtPayment(DateTimeUtil.strToDate(gmtPayment));
             aliPay.setOrderNo(orderNo);
@@ -134,8 +140,11 @@ public class AlipayServiceImpl implements AlipayService {
         });
         int row = alipayInfoMapper.insert(alipayInfo);
         if (row > 0) {
+            log.info("支付成功发送商户通知");
+            MerchantNotityHandler merchantNotityHandler = new MerchantNotityHandler(params, orderFeign, tMessageFeign);
+            MyTreadPool.exector.submit(merchantNotityHandler);
             log.info("alipay_info 插入数据成功");
-            tMessageFeign.confirmAndSendMessage(Const.TMessage.ORDER_MSG_ID_PRE+orderNo).queue();
+            tMessageFeign.confirmAndSendMessage(Const.TMessage.ORDER_MSG_ID_PRE + orderNo).queue();
         }
         return ServerResponse.createBySuccess("alipayNotify执行完毕");
     }

@@ -1,6 +1,7 @@
 package com.alag.agmall.business.module.order.api;
 
 import com.alag.agmall.business.core.common.ServerResponse;
+import com.alag.agmall.business.module.alipay.api.model.AlipayInfo;
 import com.alag.agmall.business.module.order.api.model.Order;
 import com.alag.agmall.business.module.order.api.model.OrderItem;
 import com.alag.agmall.business.module.order.api.model.PayInfo;
@@ -60,4 +61,7 @@ public interface OrderController {
 
     @GetMapping("get_pay_info")
     ServerResponse<PayInfo> getPayInfo(@RequestParam("orderNo") Long orderNo);
+
+    @RequestMapping("add_pay_info_by_alipay_info")
+    void addPayInfoByAPayInfo(@RequestBody AlipayInfo alipayInfo);
 }

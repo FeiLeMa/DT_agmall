@@ -13,9 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>notify-api</module>
-        <module>app-feign</module>
         <module>notify-server</module>
-        <module>notify-feign</module>
+        <module>notify-feignclient</module>
     </modules>
 
 
