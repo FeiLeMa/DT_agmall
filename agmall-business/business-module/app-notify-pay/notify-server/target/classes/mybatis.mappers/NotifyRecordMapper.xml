@@ -64,7 +64,19 @@
         and merchant_no = #{merchantNo,jdbcType=VARCHAR}
         </if>
         <if test="merchantOrderNo != null and merchantOrderNo != ''">
-        and merchant_order_no = #{merchantOrderNo,jdbcType=INTEGER}
+        and merchant_order_no = #{merchantOrderNo,jdbcType=VARCHAR}
+        </if>
+        <if test="notifyTimes != null">
+            and notify_times &lt; #{notifyTimes,jdbcType=INTEGER}
+        </if>
+        <if test="status != null">
+            and status = #{status,jdbcType=INTEGER}
+        </if>
+        <if test="field1 != null">
+            and status != #{field1,jdbcType=INTEGER}
+        </if>
+        <if test="field2 != null">
+            and status != #{field2,jdbcType=INTEGER}
         </if>
     </sql>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.String">

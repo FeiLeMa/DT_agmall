@@ -72,5 +72,5 @@ public interface NotifyController {
      * @return
      */
     @RequestMapping("create_record_log")
-    long createNotifyRecordLog(@RequestBody NotifyRecordLog notifyRecordLog);
+    ServerResponse<Integer> createNotifyRecordLog(@RequestBody NotifyRecordLog notifyRecordLog);
 }

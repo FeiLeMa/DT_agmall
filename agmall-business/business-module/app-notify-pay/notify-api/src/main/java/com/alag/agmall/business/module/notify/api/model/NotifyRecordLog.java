@@ -3,6 +3,7 @@ package com.alag.agmall.business.module.notify.api.model;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class NotifyRecordLog implements Serializable {
     /**
@@ -327,5 +328,10 @@ public class NotifyRecordLog implements Serializable {
 
     public void setFields(Consumer<NotifyRecordLog> consumer) {
         consumer.accept(this);
+    }
+
+
+    public static NotifyRecordLog setReturn(Function<NotifyRecordLog, NotifyRecordLog> function) {
+        return function.apply(new NotifyRecordLog());
     }
 }

@@ -20,6 +20,10 @@ public class NotifyPageParamBean implements Serializable {
     private String merchantNo;
     private String merchantOrderNo;
     private String listPageSortType;
+    private Integer notifyTimes;
+    private Integer status;
+    private Integer field1;
+    private Integer field2;
 
     private Integer pageNum;
     private Integer pageSize;

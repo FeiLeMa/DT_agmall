@@ -1,5 +1,9 @@
 package com.alag.agmall.business.module.maxnotify.server.listener;
 
+import com.alag.agmall.business.module.maxnotify.server.delay.Message;
+import com.alag.agmall.business.module.maxnotify.server.delay.Task;
+import com.alag.agmall.business.module.maxnotify.server.init.InitNotifyParam;
+import com.alag.agmall.business.module.maxnotify.server.thread.MyTreadPool;
 import com.alag.agmall.business.module.notify.api.Const.NotifyConst;
 import com.alag.agmall.business.module.notify.api.model.NotifyRecord;
 import com.alag.agmall.business.module.notify.feign.NotifyFeignClient;
@@ -24,9 +28,12 @@ public class NotifyMQListener {
 
     @Autowired
     private NotifyFeignClient notifyFeignClient;
+    @Autowired
+    private InitNotifyParam initNotifyParam;
 
     @JmsListener(destination = "MERCHANT_NOTIFY")
     public void onMessage(String orderData) {
+        log.info("开始监听MERCHANT_NOTIFY队列！");
         NotifyRecord notifyRecord = JSONObject.parseObject(orderData, NotifyRecord.class);
         notifyRecord.setStatus(NotifyConst.NotifyStatusEnum.CREATED.getCode());
         notifyRecord.setCreateTime(new Date());
@@ -38,5 +45,8 @@ public class NotifyMQListener {
             }
         }
         notifyFeignClient.createNotifyRecord(notifyRecord);
+        Task task = Task.getInstance(initNotifyParam,notifyFeignClient);
+        task.getDelayQueue().offer(new Message(notifyRecord));
+        MyTreadPool.exector.submit(task);
     }
 }

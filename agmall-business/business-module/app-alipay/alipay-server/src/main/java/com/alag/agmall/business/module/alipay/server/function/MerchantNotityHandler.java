@@ -88,7 +88,7 @@ public class MerchantNotityHandler implements Runnable {
             nRecord.setLimitNotifyTimes(5);
             nRecord.setMerchantNo(merchantNo);
             nRecord.setMerchantOrderNo(orderNo);
-            nRecord.setNotifyTimes(1);
+            nRecord.setNotifyTimes(0);
             nRecord.setUrl(returnUrl);
             nRecord.setNotifyType(NotifyConst.NotifyTypeEnum.MERCHANT.getCode());
             nRecord.setNotifyRule(notifyRuleStr);

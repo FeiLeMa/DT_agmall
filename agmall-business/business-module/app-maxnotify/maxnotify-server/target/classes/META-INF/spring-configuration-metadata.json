@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "notifyparam",
+      "type": "com.alag.agmall.business.module.maxnotify.server.init.InitNotifyParam",
+      "sourceType": "com.alag.agmall.business.module.maxnotify.server.init.InitNotifyParam"
+    }
+  ],
+  "properties": [
+    {
+      "name": "notifyparam.notify-time-maps",
+      "type": "java.util.Map<java.lang.Integer,java.lang.Integer>",
+      "sourceType": "com.alag.agmall.business.module.maxnotify.server.init.InitNotifyParam"
+    },
+    {
+      "name": "notifyparam.success-value",
+      "type": "java.lang.String",
+      "sourceType": "com.alag.agmall.business.module.maxnotify.server.init.InitNotifyParam"
+    }
+  ],
+  "hints": []
+}

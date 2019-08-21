@@ -12,3 +12,12 @@ spring:
     name: app-maxnotify
   profiles:
     active: dev
+#初始化InitNotifyParam的属性
+notifyparam:
+  successValue: SUCCESS
+  notifyTimeMaps:
+    1: 1
+    2: 2
+    3: 3
+    4: 10
+    5: 15
