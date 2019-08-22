@@ -6,7 +6,7 @@ import com.alag.agmall.business.module.message.api.model.TransactionMessage;
 import com.github.pagehelper.PageInfo;
 
 public interface TMessageService {
-    ServerResponse<Integer> saveMessage(TransactionMessage message);
+    ServerResponse saveMessage(TransactionMessage message);
 
     ServerResponse confirmAndSendMsg(String messageId);
 

@@ -2,7 +2,6 @@ package com.alag.agmall.business.module.notify.server.service.impl;
 
 import com.alag.agmall.business.core.common.ServerResponse;
 import com.alag.agmall.business.core.page.NotifyPageParamBean;
-import com.alag.agmall.business.module.notify.api.Const.IDGenerator;
 import com.alag.agmall.business.module.notify.api.Const.NotifyConst;
 import com.alag.agmall.business.module.notify.api.model.NotifyRecord;
 import com.alag.agmall.business.module.notify.server.mapper.NotifyRecordMapper;
@@ -15,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -75,20 +73,12 @@ public class NotifyRecordServiceImpl implements NotifyRecordService {
 
     @Override
     public ServerResponse<Integer> addRecord(NotifyRecord notifyRecord) {
-        notifyRecord.setFields(nRecord->{
-            nRecord.setCreateTime(new Date());
-            nRecord.setId(IDGenerator.notifyRecordIDBuilder());
-            nRecord.setUpdateTime(new Date());
-        });
         int row = notifyRecordMapper.insertSelective(notifyRecord);
         return ServerResponse.createBySuccess(row);
     }
 
     @Override
     public ServerResponse<Integer> modifyRecord(NotifyRecord notifyRecord) {
-        notifyRecord.setFields(nRecord->{
-            nRecord.setUpdateTime(new Date());
-        });
         int row = notifyRecordMapper.updateByPrimaryKeySelective(notifyRecord);
         return ServerResponse.createBySuccess(row);
     }

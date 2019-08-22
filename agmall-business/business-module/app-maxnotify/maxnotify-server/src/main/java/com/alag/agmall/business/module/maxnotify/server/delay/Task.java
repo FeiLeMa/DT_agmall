@@ -98,6 +98,7 @@ public class Task implements Runnable {
                             // 判断是否超过重发次数，未超重发次数的，再次进入延迟发送队列
                             notifyRecord.setStatus(NotifyConst.NotifyStatusEnum.HTTP_REQUEST_FALIED.getCode());
                             queue.offer(new Message(notifyRecord));
+
                         } else {
                             notifyRecord.setStatus(NotifyConst.NotifyStatusEnum.FAILED.getCode());
                         }
@@ -112,8 +113,8 @@ public class Task implements Runnable {
                         notifyRecord.setStatus(NotifyConst.NotifyStatusEnum.FAILED.getCode());
                     }
                 }
-                // 到达最大通知次数限制，标记为通知失败
-                notifyFeignClient.updateNotifyRecord(notifyRecord);
+                Integer row = notifyFeignClient.updateNotifyRecord(notifyRecord).getData();
+                log.info("修改Record记录执行是否成功{}",row);
 
             } catch (Exception e) {
                 log.info(e.getMessage());

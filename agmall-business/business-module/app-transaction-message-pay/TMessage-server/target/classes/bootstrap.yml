@@ -1,66 +1,20 @@
-server:
-  port: 10000
 spring:
-  redis:
-    database: 0
-    host: 47.240.11.229
-    port: 6379
-    password: 123456
-    timeout: 2000ms
-    store-type: redis
-  application:
-    name: app-message
   profiles:
     active: dev
-  datasource:
-    # 使用阿里的Druid连接池
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
-    # 填写你数据库的url、登录名、密码和数据库名
-    url: jdbc:mysql://47.113.35.78:3306/agmall?&useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
-    username: alag
-    password: jlnlmbM5
-    ###数据源的其他配置
-    initialSize: 5
-    minIdle: 5
-    maxActive: 20
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 1 FROM DUAL
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
-    ### 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
-    filters: stat,wall
-    maxPoolPreparedStatementPerConnectionSize: 20
-    useGlobalDataSourceStat: true
-    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
   activemq:
     broker-url: tcp://47.240.11.229:61616
     user: admin
     password: admin
-    pool:
       # 使用flase,此处改为true报错，不清楚什么原因
-      enabled: false
-      max-connections: 10
-mybatis:
-  mapper-locations: classpath:mybatis.mappers/*.xml
-eureka:
-  instance:
-    prefer-ip-address: true
-    instanceId: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
-    leaseRenewalIntervalInSeconds: 30
-  client:
-    registryFetchIntervalSeconds: 30
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://47.240.11.229:8761/eureka
-
-ribbon:
-  ReadTimeout: 120000
-  ConnectTimeout: 120000
-  MaxAutoRetries: 1 #同一台实例最大重试次数,不包括首次调用
-  MaxAutoRetriesNextServer: 1 #重试负载均衡其他的实例最大重试次数,不包括首次调用
-  OkToRetryOnAllOperations: false  #是否所有操作都重试
+    in-memory: true
+    pool:
+      enabled: true
+      max-connections: 500
+  cloud:
+    config:
+      profile: dev
+      name: app-public,app-message
+      uri: http://127.0.0.1:8888
+      fail-fast: true
+      username: admin
+      password: admin

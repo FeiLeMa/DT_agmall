@@ -1,4 +1,4 @@
-server:
+zserver:
   port: 8098
 spring:
   redis:

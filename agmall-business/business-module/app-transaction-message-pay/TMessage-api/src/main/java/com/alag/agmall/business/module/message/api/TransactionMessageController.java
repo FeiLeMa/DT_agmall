@@ -15,7 +15,7 @@ public interface TransactionMessageController {
      * 预存储消息
      */
     @PostMapping("prestore_message")
-    ServerResponse<Integer> saveMessageWaitingConfirm(@RequestBody TransactionMessage transactionMessage);
+    ServerResponse saveMessageWaitingConfirm(@RequestBody TransactionMessage transactionMessage);
 
     /**
      * 确认并发送消息.
@@ -35,7 +35,7 @@ public interface TransactionMessageController {
      * 透传到MQ
      */
     @PostMapping("direct_send_message")
-    HystrixCommand<ServerResponse> directSendMessage(@RequestBody TransactionMessage transactionMessage);
+    void directSendMessage(@RequestBody TransactionMessage transactionMessage);
 
 
     /**

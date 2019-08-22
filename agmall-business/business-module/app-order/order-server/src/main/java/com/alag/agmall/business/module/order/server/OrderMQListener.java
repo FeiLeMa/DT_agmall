@@ -18,6 +18,5 @@ public class OrderMQListener {
     public void onMessage(String orderData) {
             Long orderNo = JSONObject.parseObject(orderData, Long.class);
             orderService.modifyOrderStatusAndAddPayInfo(orderNo);
-
     }
 }

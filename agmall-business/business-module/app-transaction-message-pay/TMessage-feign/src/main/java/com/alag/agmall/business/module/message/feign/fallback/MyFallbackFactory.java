@@ -15,11 +15,12 @@ import org.springframework.stereotype.Component;
 public class MyFallbackFactory implements FallbackFactory<TransactionMessageFeign> {
     private static final Setter hystrixCommandGroupKey =
             Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("TransactionMessageFeign"));
+
     @Override
     public TransactionMessageFeign create(Throwable throwable) {
         return new TransactionMessageFeign() {
             @Override
-            public ServerResponse<Integer> saveMessageWaitingConfirm(TransactionMessage transactionMessage) {
+            public ServerResponse saveMessageWaitingConfirm(TransactionMessage transactionMessage) {
                 return ServerResponse.createByErrorMessage(throwable.getMessage());
             }
 
@@ -39,13 +40,7 @@ public class MyFallbackFactory implements FallbackFactory<TransactionMessageFeig
             }
 
             @Override
-            public HystrixCommand<ServerResponse> directSendMessage(TransactionMessage transactionMessage) {
-                return new HystrixCommand<ServerResponse>(hystrixCommandGroupKey) {
-                    @Override
-                    protected ServerResponse run() throws Exception {
-                        return ServerResponse.createByErrorMessage(throwable.getMessage());
-                    }
-                };
+            public void directSendMessage(TransactionMessage transactionMessage) {
             }
 
             @Override

@@ -43,14 +43,13 @@ public class MerchantNotityHandler implements Runnable {
         final Long orderNo = Long.parseLong(paramsMap.get("out_trade_no"));
         final String tradeStatus = paramsMap.get("trade_status");
         final String gmtPayment = paramsMap.get("gmt_payment");
+
         Order order = orderFeign.queryOrderS(orderNo).getData();
-        log.info("orderNo:{}",orderNo);
-        log.info("tradeStatus:{}",tradeStatus);
-        log.info("gmtPayment:{}",gmtPayment);
         if (null == order) {
-            log.info("订单不存在");
+            log.info("未查到订单orderNo:{}",orderNo);
             return;
         }
+
         BigDecimal payment = order.getPayment();
         Integer userId = order.getUserId();
         Date createTime = order.getCreateTime();
@@ -62,7 +61,6 @@ public class MerchantNotityHandler implements Runnable {
         urlMap.put("createTime", createTime);
         urlMap.put("status", tradeStatus);
         String returnUrl = Map2UrlString.work(urlMap);
-        log.info("returnUrl:{}",returnUrl);
         String orderNoStr = orderNo.toString();
 
         String sendMerchantText = this.getSendRrecordStr(returnUrl, orderNoStr, PropertiesUtil.getProperty(Const.Property.MERCHANT_NO));
@@ -70,9 +68,8 @@ public class MerchantNotityHandler implements Runnable {
             tm.setConsumerQueue(Const.TMessage.MERCHANT_QUEUE_NAME);
             tm.setMessageBody(sendMerchantText);
         });
-        log.info("tmsg已经构建");
-        tMessageFeign.directSendMessage(tMsg).queue();
-        log.info("异步调用directSendMessage");
+        tMessageFeign.directSendMessage(tMsg);
+        log.info("商户通知已经投递到MQ");
     }
 
     private String getSendRrecordStr(String returnUrl, String orderNo, String merchantNo) {
@@ -80,8 +77,8 @@ public class MerchantNotityHandler implements Runnable {
         notifyRule.put("1", "0");
         notifyRule.put("2", "2");
         notifyRule.put("3", "3");
-        notifyRule.put("4", "15");
-        notifyRule.put("5", "40");
+        notifyRule.put("4", "4");
+        notifyRule.put("5", "8");
         String notifyRuleStr = JSONObject.toJSONString(notifyRule);
         NotifyRecord notifyRecord = NotifyRecord.setReturn(nRecord -> {
             nRecord.setId(IDGenerator.notifyRecordIDBuilder());
@@ -94,7 +91,6 @@ public class MerchantNotityHandler implements Runnable {
             nRecord.setNotifyRule(notifyRuleStr);
             return nRecord;
         });
-        log.info("notifyRuleStr,{}",notifyRecord);
         return JSONObject.toJSONString(notifyRecord);
     }
 }

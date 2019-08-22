@@ -24,12 +24,17 @@ public class TMessageServiceImpl implements TMessageService {
     private JmsTemplate jmsTemplate;
 
     @Override
-    public ServerResponse<Integer> saveMessage(TransactionMessage message) {
+    public ServerResponse saveMessage(TransactionMessage message) {
         message.setStatus(Const.MessageEnum.WAITING_CONFIRM.getCode());
         message.setAreadlyDead(Const.TMessage.AREADLY_DEAD_NO);
         message.setMessageSendTimes(Const.TMessage.RE_SENT_TIMES_ZEROTH);
 
-        return ServerResponse.createBySuccess(transactionMessageMapper.insertSelective(message));
+        int row = transactionMessageMapper.insertSelective(message);
+        if (row > 0) {
+            return ServerResponse.createBySuccess();
+        } else {
+            return ServerResponse.createByError();
+        }
     }
 
     @Override

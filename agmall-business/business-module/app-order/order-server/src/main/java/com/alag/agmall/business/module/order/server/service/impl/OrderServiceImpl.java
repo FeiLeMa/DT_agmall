@@ -108,11 +108,19 @@ public class OrderServiceImpl implements OrderService {
     @Transactional
     public ServerResponse modifyOrderStatusAndAddPayInfo(Long orderNo) {
         Order order = orderMapper.selectByOrderNo(orderNo);
-        if (order.getStatus()==Const.OrderStatusEnum.PAID.getCode()) {
+
+        if (null == order) {
+            log.info("订单没找到orderNo:{}",orderNo);
+            return ServerResponse.createByErrorMessage("订单没找到");
+        }
+
+        if (order.getStatus() == Const.OrderStatusEnum.PAID.getCode()) {
             log.info(("幂等判断，订单状态已经修改，请忽略！"));
             transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.ORDER_MSG_ID_PRE + orderNo);
             return ServerResponse.createBySuccess("幂等判断，订单状态已经修改，请忽略！");
         }
+
+
         AlipayInfo alipayInfo = alipayFeign.getByOrderNo(orderNo).getData();
         TransactionMessage message = TransactionMessage.setReturn(msg -> {
             msg.setCreateTime(new Date());
@@ -127,18 +135,21 @@ public class OrderServiceImpl implements OrderService {
             msg.setMessageDataType(Const.TMessage.MESSAGE_DATA_TYPE);
             msg.setRemark(Const.TMessage.REMARK);
         });
-        transactionMessageFeign.saveMessageWaitingConfirm(message);
-        order.setStatus(Const.OrderStatusEnum.PAID.getCode());
-        order.setUpdateTime(new Date());
-        int row = orderMapper.updateByPrimaryKeySelective(order);
-        String retMsg = "订单状态已经修改";
-        if (row > 0) {
-            transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.ORDER_MSG_ID_PRE + orderNo).queue();
-            transactionMessageFeign.confirmAndSendMessage(Const.TMessage.PAYINFO_MSG_ID_PRE + orderNo).queue();
-        } else {
-            retMsg = "修改订单状态失败";
+        ServerResponse response = transactionMessageFeign.saveMessageWaitingConfirm(message);
+        if (response.isSuccess()) {
+            order.setStatus(Const.OrderStatusEnum.PAID.getCode());
+            order.setUpdateTime(new Date());
+            int row = orderMapper.updateByPrimaryKeySelective(order);
+            String retMsg = "订单状态已经修改";
+            if (row > 0) {
+                transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.ORDER_MSG_ID_PRE + orderNo).queue();
+                transactionMessageFeign.confirmAndSendMessage(Const.TMessage.PAYINFO_MSG_ID_PRE + orderNo).queue();
+            } else {
+                retMsg = "修改订单状态失败";
+            }
+            return ServerResponse.createBySuccess(retMsg);
         }
-        return ServerResponse.createBySuccess(retMsg);
+        return ServerResponse.createByErrorMessage("预发送消息失败");
     }
 
     @Override
@@ -156,9 +167,15 @@ public class OrderServiceImpl implements OrderService {
         payInfo.setPayPlatform(Const.PayPlatformEnum.ALIPAY.getCode());
         payInfo.setPlatformNumber(alipayInfo.getTradeNo());
         payInfo.setPlatformStatus(alipayInfo.getTradeStatus());
-        payInfoMapper.insert(payInfo);
-        transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.PAYINFO_MSG_ID_PRE + alipayInfo.getOrderNo()).queue();
-        return ServerResponse.createBySuccess();
+        int row = payInfoMapper.insert(payInfo);
+        log.info("插入payInfo结果row{}",row);
+        if (row > 0) {
+            transactionMessageFeign.deleteMessageByMessageId(Const.TMessage.PAYINFO_MSG_ID_PRE + alipayInfo.getOrderNo()).queue();
+            log.info("插入payInfo成功！");
+            return ServerResponse.createBySuccess();
+        }
+        log.info("插入PayInfo失败");
+        return ServerResponse.createByErrorMessage("插入PayInfo失败");
     }
 
 

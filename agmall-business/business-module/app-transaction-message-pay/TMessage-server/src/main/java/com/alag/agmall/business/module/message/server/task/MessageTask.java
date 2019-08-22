@@ -15,7 +15,7 @@ public class MessageTask {
     @Autowired
     private MsgTaskService msgTaskService;
 
-    @Scheduled(fixedRate = 30*1000)
+    @Scheduled(initialDelay = 1000*60*30,fixedRate = 120*1000)
     public void handleWaitingConfirmMsg() {
 //        处理等待确认超时的消息
         log.info("第{}次执行handleWaitingConfirmMsg方法",w_fixedRateCount++);

@@ -63,7 +63,7 @@ public interface NotifyController {
      * @param notifyRecord
      */
     @RequestMapping("modify")
-    void updateNotifyRecord(@RequestBody NotifyRecord notifyRecord);
+    ServerResponse<Integer> updateNotifyRecord(@RequestBody NotifyRecord notifyRecord);
 
     /**
      * 创建消息通知记录

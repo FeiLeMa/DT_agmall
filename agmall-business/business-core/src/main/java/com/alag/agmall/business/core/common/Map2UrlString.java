@@ -23,13 +23,12 @@ public class Map2UrlString {
         String merchantUrl = PropertiesUtil.getProperty(Const.Property.MERCHANT_URL);
         String status = map.get("status").toString();
         StringBuilder stringBuilder = new StringBuilder();
-        String url = stringBuilder.append(merchantUrl).append("payment=").append(payment)
+        String url = stringBuilder.append(merchantUrl).append("?payment=").append(payment)
                 .append("&paymentTime=").append(paymentTime)
                 .append("&userId=").append(userId)
                 .append("&createTime=").append(createTime)
                 .append("&status=").append(status)
                 .toString();
-
         return url;
     }
 }

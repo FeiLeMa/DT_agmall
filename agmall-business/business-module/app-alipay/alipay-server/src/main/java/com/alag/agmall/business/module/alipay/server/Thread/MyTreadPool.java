@@ -12,8 +12,8 @@ import java.util.concurrent.*;
 public class MyTreadPool {
     private static MyTreadPool myTreadPool = new MyTreadPool();
     private static BlockingQueue<Runnable> workQueue = new ArrayBlockingQueue<>(512);
-    public static ExecutorService exector = new ThreadPoolExecutor(8,
-            32,
+    public static ExecutorService exector = new ThreadPoolExecutor(100,
+            100,
             0,
             TimeUnit.SECONDS,
             workQueue,
